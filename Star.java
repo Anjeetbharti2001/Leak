@@ -1,22 +1,22 @@
-import java.util.*;
-public class Star {
+public class Star{
+    static void print_rectangle(int k, int l){
+        int a, b;
+        for(a = 1; a <= k; a++){
+            for(b = 1; b <= l; b++){
+                if(a == 1 || a == k || b == 1 || b == l)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+                
+               
+            }
+              System.out.println();
+        }
+    }
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+        int rows = 8, columns = 22 ;
 
-        System.out.print("Enter size of Arrays ");
-        int n = sc.nextInt();
+        print_rectangle(rows, columns);
 
-        int [] arr = new int[n];
-
-        System.out.println("Enter Arrays Element ");
-
-        for(int i = 0; i<n; i++){
-            arr[i] = sc.nextInt();
-        }
-        System.out.print("Arrays Elements");
-
-        for(int i= 0; i<n; i++){
-            System.out.print(arr[i] + " ");
-        }
     }
 }
