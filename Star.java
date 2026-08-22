@@ -1,9 +1,9 @@
 public class Star{
-    static void print_rectangle(int k, int l){
+    static void print_squaredi(int k){
         int a, b;
         for(a = 1; a <= k; a++){
-            for(b = 1; b <= l; b++){
-                if(a == 1 || a == k || b == 1 || b == l)
+            for(b = 1; b <= k; b++){
+                if(a == 1 || a == k || b == 1 || b == k)
                     System.out.print("*");
                 else
                     System.out.print(" ");
@@ -14,9 +14,9 @@ public class Star{
         }
     }
     public static void main(String args[]){
-        int rows = 8, columns = 22 ;
+        int rows = 12;
 
-        print_rectangle(rows, columns);
+        print_squaredi(rows);
 
     }
 }
