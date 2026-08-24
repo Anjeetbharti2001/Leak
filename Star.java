@@ -1,11 +1,23 @@
+import java.util.*;
 public class Star{
     public static void main(String args[]){
-        int arr[] = {4,8,9,3,35,92};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of Arrays:- ");
 
-        System.out.print("Traversal arrays element reversed:-");
+        int n = sc.nextInt();
 
-        for(int i =arr.length -1 ; i>=0; i--){
+        int [] arr = new int[n];
+
+        System.out.println("Enter arrys elements:-");
+
+        for(int i = 0; i<n ; i++){
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Arrays elements :-");
+
+        for(int i = 0; i<n; i++){
             System.out.print(arr[i] + " ");
         }
+
     }
 }
