@@ -1,9 +1,10 @@
-public class Star {
+public class Star{
     public static void main(String args[]){
-        int arr[] = {2, 6, 8, 7, 6, 9};
-        System.out.println("Reverse arrays in java element:-");
+        int arr[] = {4,8,9,3,35,92};
 
-        for(int i = arr.length - 1; i>= 0; i--){
+        System.out.print("Traversal arrays element reversed:-");
+
+        for(int i =arr.length -1 ; i>=0; i--){
             System.out.print(arr[i] + " ");
         }
     }
