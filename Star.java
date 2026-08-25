@@ -1,7 +1,8 @@
 public class Star {
     public static void main(String args[]){
-       String   firstName = "hello";
-       String lastName = "brother";
-       System.out.println(firstName + " " + lastName); 
+       String   x = "10";
+       String y = "20";
+       String z = x + y;
+       System.out.println(z); 
     }
 }
