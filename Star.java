@@ -1,6 +1,6 @@
 public class Star {
     public static void main(String args[]){
-       boolean  myBool = true;
-       System.out.println(myBool); 
+       String   myText= "hello";
+       System.out.println(myText); 
     }
 }
