@@ -1,8 +1,8 @@
 public class Star {
-    public static void main(String args[]){
-        boolean isJavaFun = true;
-        boolean isFishTasty = false ;
-        System.out.println("Is java Fun ?" + isJavaFun);
-        System.out.println("Is fis tasty?" + isFishTasty );
+    public static void main(String arrgs[]){
+        byte age = 25;
+        byte temperature = -10;
+        System.out.println("Age:" + age);
+        System.out.println("Temperature:" + temperature);
     }
 }
