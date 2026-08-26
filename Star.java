@@ -1,8 +1,9 @@
 public class Star{
     public static void main(String args[]){
-        short students = 1000;
-        short temp = -200;
-        System.out.println("Number of Students :" + students);
-        System.out.println("Temperature: " + temp);
+        int population = 2000000;
+        int distance = 150000000;
+
+        System.out.println("Population : " + population );
+        System.out.println("Distance :" + distance);
     }
 }
