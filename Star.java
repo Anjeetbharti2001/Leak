@@ -1,11 +1,17 @@
-import java.util.*;
-import java.util.Collections;
-
 public class Star{
     public static void main(String args[]){
-        Integer [] arr = {5,7,8,0,12,4,5,7};
-        
-        Arrays.sort(arr, Collections.reverseOrder());
-        System.out.println(Arrays.toString(arr));
+        int arr[] = {5,2,8,1,9};
+
+        for(int i = 0; i<arr.length - 1; i++){
+            for(int j = 0; j<arr.length - i - 1; j++){
+                if(arr[j] > arr[j + 1]){
+                    int temp = arr[j];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        for(int num : arr){
+            System.out.print(num + " ");
+        }
     }
 }
