@@ -1,10 +1,11 @@
 import java.util.*;
+import java.util.Collections;
+
 public class Star{
     public static void main(String args[]){
-        int arr[] = {4,7,9,2,6,5};
-
-        Arrays.sort(arr);
-
+        Integer [] arr = {5,7,8,0,12,4,5,7};
+        
+        Arrays.sort(arr, Collections.reverseOrder());
         System.out.println(Arrays.toString(arr));
     }
 }
