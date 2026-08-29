@@ -1,41 +1,100 @@
 // public class Star{
-//     public static void main(String args[]){
-//         int [] arr = {5,2,8,1};
+//     static void mergeSort(int[], arr, int left, int right){
+//         if(left < right){
+//             int mid = (left + right)/2;
 
-//         int key = arr[i];
-
-//         int j = i - 1;
-//         while (j >= 0 && arr[j] > key){
-//             arr[j + 1] = arr[i];
-//             j--;
+//             mergeSort(arr, left, mid);
+//             mergeSort(arr, mid + 1, right);
+//             mergeSort(arr,left,mid,right);
 //         }
-//         arr[j + 1] = key;
 //     }
-//     for(int num : arr){
-//         System.out.println(num + " ");
+//     static void mergeSort(int[] arr, int left, int mid, int right){
+//         int n1 = mid - left + 1;
+//         int n2 = right - mid;
+
+//         int [] L = new int [n1];
+//         int [] R = new int [n2];
+
+//         for(int i = 0; i<n1; i++){
+//             L[i] = arr[left + i];
+//         }
+//         for(int j = 0; j<n2; j++){
+//             R[j] = arr[mid + 1 + j];
+//         }
+//         int i = 0; j=0; k = left;
+//         while(i <n1 && j < n2){
+//             if(L[i] <= R[j]){
+//                 arr[k++] = L[i++];
+//             }else{
+//                 arr[k++] = R[j++];
+//             }
+//         }
+//         while(i<n1){
+//             arr[k++] = L[i++];
+//         }
+//         while(j < n2){
+//             arr[k++] = R[j++];
+//         }
+//     }
+//     public static void main(String args[]){
+//         int [] arr = {5,2,8,1,9}; 
+//         mergeSort(arr, 0, arr.length - 1);
+//         System.out.println(Arrays.toString(arr));
 //     }
 // }
 
-public class Star { 
-    public static void main(String[] args) { 
-        int[] arr = {5, 2, 8, 1}; 
+import java.util.Arrays; // Fixed: Missing import statement for Arrays.toString()
 
-        // Fixed: Added the outer loop to iterate through the array
-        for (int i = 1; i < arr.length; i++) {
-            int key = arr[i]; 
-            int j = i - 1; 
+public class Star {
+    // Fixed: Corrected parameter syntax (int[] arr instead of int[], arr)
+    static void mergeSort(int[] arr, int left, int right) {
+        if (left < right) {
+            int mid = (left + right) / 2;
 
-            // Shifts elements that are greater than the key
-            while (j >= 0 && arr[j] > key) { 
-                arr[j + 1] = arr[j]; // Fixed: Changed '==' to '=' and 'arr[i]' to 'arr[j]'
-                j--; 
-            } 
-            arr[j + 1] = key; 
-        } 
+            mergeSort(arr, left, mid);
+            mergeSort(arr, mid + 1, right);
+            merge(arr, left, mid, right); // Fixed: Changed 'mergeSort' to 'merge' to call the helper method
+        }
+    }
 
-        // Prints the sorted array
-        for (int num : arr) { 
-            System.out.print(num + " "); // Fixed: Changed println to print for a single line
-        } 
-    } 
+    // Fixed: Changed the method name to 'merge' to avoid confusing recursive overloading
+    static void merge(int[] arr, int left, int mid, int right) {
+        int n1 = mid - left + 1;
+        int n2 = right - mid;
+
+        int[] L = new int[n1];
+        int[] R = new int[n2];
+
+        for (int i = 0; i < n1; i++) {
+            L[i] = arr[left + i];
+        }
+        for (int j = 0; j < n2; j++) {
+            R[j] = arr[mid + 1 + j];
+        }
+
+        // Fixed: Declared data types for 'j' and 'k'
+        int i = 0; 
+        int j = 0; 
+        int k = left;
+
+        while (i < n1 && j < n2) {
+            if (L[i] <= R[j]) {
+                arr[k++] = L[i++];
+            } else {
+                arr[k++] = R[j++];
+            }
+        }
+        while (i < n1) {
+            arr[k++] = L[i++];
+        }
+        while (j < n2) {
+            arr[k++] = R[j++];
+        }
+    }
+
+    public static void main(String args[]) {
+        int[] arr = {5, 2, 8, 1, 9};
+        mergeSort(arr, 0, arr.length - 1);
+        System.out.println(Arrays.toString(arr));
+    }
 }
