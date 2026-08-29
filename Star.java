@@ -1,100 +1,40 @@
-// public class Star{
-//     static void mergeSort(int[], arr, int left, int right){
-//         if(left < right){
-//             int mid = (left + right)/2;
-
-//             mergeSort(arr, left, mid);
-//             mergeSort(arr, mid + 1, right);
-//             mergeSort(arr,left,mid,right);
-//         }
-//     }
-//     static void mergeSort(int[] arr, int left, int mid, int right){
-//         int n1 = mid - left + 1;
-//         int n2 = right - mid;
-
-//         int [] L = new int [n1];
-//         int [] R = new int [n2];
-
-//         for(int i = 0; i<n1; i++){
-//             L[i] = arr[left + i];
-//         }
-//         for(int j = 0; j<n2; j++){
-//             R[j] = arr[mid + 1 + j];
-//         }
-//         int i = 0; j=0; k = left;
-//         while(i <n1 && j < n2){
-//             if(L[i] <= R[j]){
-//                 arr[k++] = L[i++];
-//             }else{
-//                 arr[k++] = R[j++];
-//             }
-//         }
-//         while(i<n1){
-//             arr[k++] = L[i++];
-//         }
-//         while(j < n2){
-//             arr[k++] = R[j++];
-//         }
-//     }
-//     public static void main(String args[]){
-//         int [] arr = {5,2,8,1,9}; 
-//         mergeSort(arr, 0, arr.length - 1);
-//         System.out.println(Arrays.toString(arr));
-//     }
-// }
-
-import java.util.Arrays; // Fixed: Missing import statement for Arrays.toString()
+import java.util.*;
 
 public class Star {
-    // Fixed: Corrected parameter syntax (int[] arr instead of int[], arr)
-    static void mergeSort(int[] arr, int left, int right) {
-        if (left < right) {
-            int mid = (left + right) / 2;
+    // Fixed: Added 'void' return type and corrected parameter syntax (int[] arr)
+    static void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
 
-            mergeSort(arr, left, mid);
-            mergeSort(arr, mid + 1, right);
-            merge(arr, left, mid, right); // Fixed: Changed 'mergeSort' to 'merge' to call the helper method
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
         }
     }
 
-    // Fixed: Changed the method name to 'merge' to avoid confusing recursive overloading
-    static void merge(int[] arr, int left, int mid, int right) {
-        int n1 = mid - left + 1;
-        int n2 = right - mid;
+    static int partition(int[] arr, int low, int high) {
+        int pivot = arr[high];
+        int i = low - 1;
 
-        int[] L = new int[n1];
-        int[] R = new int[n2];
+        for (int j = low; j < high; j++) {
+            if (arr[j] < pivot) {
+                i++;
 
-        for (int i = 0; i < n1; i++) {
-            L[i] = arr[left + i];
-        }
-        for (int j = 0; j < n2; j++) {
-            R[j] = arr[mid + 1 + j];
-        }
-
-        // Fixed: Declared data types for 'j' and 'k'
-        int i = 0; 
-        int j = 0; 
-        int k = left;
-
-        while (i < n1 && j < n2) {
-            if (L[i] <= R[j]) {
-                arr[k++] = L[i++];
-            } else {
-                arr[k++] = R[j++];
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
-        while (i < n1) {
-            arr[k++] = L[i++];
-        }
-        while (j < n2) {
-            arr[k++] = R[j++];
-        }
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+
+        return i + 1;
     }
 
     public static void main(String args[]) {
         int[] arr = {5, 2, 8, 1, 9};
-        mergeSort(arr, 0, arr.length - 1);
+
+        quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
-}
+} // Fixed: Removed trailing comma outside the class boundary
