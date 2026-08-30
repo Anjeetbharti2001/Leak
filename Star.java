@@ -1,13 +1,13 @@
 public class Star{
+    // Using final and int keyword
     public static void main(String args[]){
-        int number = 10;
-        // check if number is less than 0
-
-        if(number < 0){
-            System.out.println("The number is Negative.");
-        }else{
-            System.out.println("statement outSide if Block");
+        final int x = 10;
+        // Usinf if and else keyword
+        if(x > 10 ){
+            System.out.println("Failed");
+        }else {
+            System.out.println("Successful demonstration " + "of keywords.");
         }
-        
+
     }
 }
