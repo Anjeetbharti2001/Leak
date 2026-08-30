@@ -1,13 +1,19 @@
 public class Star{
-    // Using final and int keyword
-    public static void main(String args[]){
-        final int x = 10;
-        // Usinf if and else keyword
-        if(x > 10 ){
-            System.out.println("Failed");
-        }else {
-            System.out.println("Successful demonstration " + "of keywords.");
-        }
 
+    int a ;
+    int b;
+
+    // Prameterized constructor
+    Star(int a, int b){
+        this.a = a;
+        this.b = b;
+    }
+    void display(){
+        // Displaying value of variables a and b
+        System.out.println("a = " + a + " b = " + b);
+    }
+    public static void main(String args[]){
+        Star object = new Star(10, 20);
+        object.display();
     }
 }
