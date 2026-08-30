@@ -1,18 +1,21 @@
-class Person{
-    Person(){
-        System.out.println("Person class Constructor");
+class ParentClass{
+    public boolean isTrue(){
+        return true;
     }
 }
+class ChildClass extends ParentClass{
+    public boolean isTrue(){
+        boolean parentResult = super.isTrue();
 
-class Student extends Person{
-    Student(){
-        super();
-
-        System.out.println("Stident class Constructor");
+        return !parentResult;
     }
 }
 public class Stars{
     public static void main(String args[]){
-        Student s = new Student();
+        ChildClass child = new ChildClass();
+
+        boolean result = child.isTrue();
+
+        System.out.println(result);
     }
 }
