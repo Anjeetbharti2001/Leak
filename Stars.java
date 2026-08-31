@@ -1,21 +1,20 @@
 public class Stars{
-    public static void main(String args[]){
-        int arr[] = {3,5, 5, 6, 59, 6};
-
-        int key = 23;
-
-        int index = -1;
-
+    static int LinearSearch(int [] arr, int key){
         for(int i = 0; i<arr.length; i++){
-            if(arr[i] == key){
-                index = i;
-                break;
+            if(arr [i] == key){
+                return i;
             }
         }
-        if(index != -1){
-            System.out.println("Element found at index !" + index);
+        return - 1;
+    }
+    public static void main(String args[]){
+        int []arr = {5,10, 15,20, 25};
+
+        int result = LinearSearch(arr, 20);
+        if(result != -1){
+            System.out.println("Found at index :- " + result);
         }else{
-            System.out.println("Element is not found:");
+            System.out.println("Not found");
         }
     }
 }
