@@ -1,20 +1,15 @@
-public class Stars {
-    public static void main(String[] args) {
+public class Stars{
+    public static void main(String args[]){
+        int arr [] = {5,10,15,20};
 
-        int[] arr = {2, 4, 6, 8, 10};
-
-        int[] prefix = new int[arr.length];
+        int [] prefix = new int[arr.length];
 
         prefix[0] = arr[0];
 
-        for (int i = 1; i < arr.length; i++) {
+        for(int i = 1; i<arr.length; i++){
             prefix[i] = prefix[i - 1] + arr[i];
-        }
 
-        System.out.print("Prefix Sum Array: ");
-
-        for (int num : prefix) {
-            System.out.print(num + " ");
+            System.out.println("Total sum = " + prefix[arr.length - 1]);
         }
     }
 }
