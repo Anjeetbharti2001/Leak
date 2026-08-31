@@ -1,21 +1,20 @@
-class ParentClass{
-    public boolean isTrue(){
-        return true;
-    }
-}
-class ChildClass extends ParentClass{
-    public boolean isTrue(){
-        boolean parentResult = super.isTrue();
+public class Stars {
+    public static void main(String args[]) {
 
-        return !parentResult;
-    }
-}
-public class Stars{
-    public static void main(String args[]){
-        ChildClass child = new ChildClass();
+        int[] arr = {2, 4, 6, 8, 10};
 
-        boolean result = child.isTrue();
+        int[] prefix = new int[arr.length];
 
-        System.out.println(result);
+        prefix[0] = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            prefix[i] = prefix[i - 1] + arr[i];
+        }
+
+        System.out.print("Prefix Sum Array: ");
+
+        for (int num : prefix) {
+            System.out.print(num + " ");
+        }
     }
 }
