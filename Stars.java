@@ -1,17 +1,13 @@
 public class Stars{
     public static void main(String args[]){
-        int [] arr = {4, 7,8,3, 6, 9};
-
-        int key = 6;
-
-        boolean found = false;
-
+        int [] arr = {2,4,2,6,2,8};
+        int key = 2;
+        
+        int count = 0;
         for(int num : arr){
-            if(num == key){
-                found = true;
-                break;
-            }
+            count++;
         }
-        System.out.println(found);
+         System.out.println(count);
     }
+   
 }
