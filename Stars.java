@@ -1,12 +1,16 @@
 public class Stars{
     public static void main(String args[]){
-        int [] arr = {5,7,83,2,4,5,6};
-    
-        int key = 2;
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] == key){
-                System.out.print(i + " ");
+        String Str = "Anjeet";
+        char Target = 'j';
+
+        boolean found = false;
+        for(int i = 0; i<Str.length(); i++){
+            if(Str.charAt(i) == Target){
+                found = true;
+                break;
             }
         }
+        System.out.println(found);
+
     }
 }
