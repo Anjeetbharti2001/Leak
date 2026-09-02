@@ -1,16 +1,19 @@
 public class Stars{
     public static void main(String args[]){
-        String Str = "Anjeet";
-        char Target = 'j';
+       int [][] arr = {
+        {1,2,3},
+        {4,5,6},
+        {7,8,9},
+       };
 
-        boolean found = false;
-        for(int i = 0; i<Str.length(); i++){
-            if(Str.charAt(i) == Target){
-                found = true;
-                break;
+       int key = 8;
+
+       for(int i = 0; i<arr.length; i++){
+        for(int j = 0; j<arr[i].length; j++){
+            if(arr[i][j] == key){
+                System.out.println("found at (" + 1 + "," + j + "j");
             }
         }
-        System.out.println(found);
-
+       }
     }
 }
