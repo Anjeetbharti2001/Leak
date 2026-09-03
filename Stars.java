@@ -1,15 +1,11 @@
+import java.io.*;
+
+class Test{
+    // static variable in Test class 
+    static int var = 10;
+}
 public class Stars{
     public static void main(String args[]){
-        float si = 5.5f;
-
-        int t = 10;
-        int s = 20;
-
-        char var = 'h';
-
-        System.out.println("Simple Interest:-" + si);
-        System.out.println("Speed:-" + s);
-        System.out.println("Time:-" + t);
-        System.out.println("Character :-" + var);
+        System.out.println("Static variable : " + Test.var);
     }
 }
