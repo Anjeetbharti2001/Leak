@@ -1,19 +1,15 @@
 public class Stars{
     public static void main(String args[]){
-       int [][] arr = {
-        {1,2,3},
-        {4,5,6},
-        {7,8,9},
-       };
+        float si = 5.5f;
 
-       int key = 8;
+        int t = 10;
+        int s = 20;
 
-       for(int i = 0; i<arr.length; i++){
-        for(int j = 0; j<arr[i].length; j++){
-            if(arr[i][j] == key){
-                System.out.println("found at (" + 1 + "," + j + "j");
-            }
-        }
-       }
+        char var = 'h';
+
+        System.out.println("Simple Interest:-" + si);
+        System.out.println("Speed:-" + s);
+        System.out.println("Time:-" + t);
+        System.out.println("Character :-" + var);
     }
 }
