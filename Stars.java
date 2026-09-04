@@ -1,11 +1,18 @@
 public class Stars{
     public static void main(String args[]){
+        int [][] arr = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        int key = 8;
 
-        int x;
-        for( x = 0; x < 4; x++){
-            System.out.println(x);
+        for(int i = 0; i<arr.length; i++){
+            for(int j = 0; j<arr.length; j++){
+                if(arr[i][j] == key){
+                    System.out.println("found at (" + 1 + "," + j + ")");
+                }
+            }
         }
-        // will produces erroer
-        System.out.println(x + " ");
     }
 }
