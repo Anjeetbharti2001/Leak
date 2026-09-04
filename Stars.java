@@ -1,18 +1,31 @@
-public class Stars{
-    public static void main(String args[]){
-        int [][] arr = {
-            {1,2,3},
-            {4,5,6},
-            {7,8,9}
-        };
-        int key = 8;
+// Reverse an array using two pointers
 
-        for(int i = 0; i<arr.length; i++){
-            for(int j = 0; j<arr.length; j++){
-                if(arr[i][j] == key){
-                    System.out.println("found at (" + 1 + "," + j + ")");
-                }
-            }
+public class Stars {
+
+    public static void reverse(int[] arr) {
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left < right) {
+
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            left++;
+            right--;
         }
+
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+
+    public static void main(String args[]) {
+
+        int arr[] = {3, 5, 6, 7, 8, 9};
+
+        reverse(arr);
     }
 }
