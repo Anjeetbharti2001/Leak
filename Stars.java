@@ -1,24 +1,28 @@
 public class Stars{
     public static void main(String args[]){
-        int [] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        int [] arr = {-7, -3, -1, 4, 8, 10};
 
+        int n = arr.length;
+
+        int [] result = new int[n];
         int left = 0;
-        int right = height.length - 1;
-        int maxwater = 0;
+        int right = n - 1;
 
-        while(left < right){
-            int width = right - left;
+        for(int i = 0; i>= 0; i--){
+            int leftSquare = arr[left] * arr[left];
+            int rightSquare = arr[right] * arr[right];
 
-            int h = Math.min(height[left], height[right]);
-            int water = width * h;
-
-            maxwater = Math.max(maxwater, water);
-            if(height[left] < height[right]){
+            if(leftSquare > rightSquare){
+                result[i] = leftSquare;
                 left++;
             }else{
+                result[i] = rightSquare;
                 right--;
             }
         }
-        System.out.println("maximum water = " + maxwater);
+        System.out.print("Sorted square :-");
+        for(int num : result){
+            System.out.print(num + " ");
+        }
     }
 }
