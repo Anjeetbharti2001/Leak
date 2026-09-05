@@ -1,15 +1,10 @@
 public class Stars{
     public static void main(String args[]){
-        //Comparison Operators
-        int a = 10;
-        int b = 3;
-        int c = 5;
+        boolean x = true;
+        boolean y = false;
 
-        System.out.println("a > b : " + (a > b));
-        System.out.println("a < b :" + (a < b));
-        System.out.println("a >= b : " + (a >= b));
-        System.out.println("a <= b :" + (a <= b ));
-        System.out.println("a == c :" + (a == c));
-        System.out.println("a != c :" + (a != c));
+        System.out.println("x && y : " + (x && y));
+        System.out.println("x || y :" + (x || y));
+        System.out.println("!x : " + (!x));
     }
 }
