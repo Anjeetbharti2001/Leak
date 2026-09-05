@@ -1,21 +1,24 @@
 public class Stars{
-    public static void moveZeros(int [] arr){
-        int j = 0;
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] != 0){
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-                j++;
-                i--;
+    public static void main(String args[]){
+        int [] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+
+        int left = 0;
+        int right = height.length - 1;
+        int maxwater = 0;
+
+        while(left < right){
+            int width = right - left;
+
+            int h = Math.min(height[left], height[right]);
+            int water = width * h;
+
+            maxwater = Math.max(maxwater, water);
+            if(height[left] < height[right]){
+                left++;
+            }else{
+                right--;
             }
         }
-        for(int x : arr){
-        System.out.print(x + " ");
-        }
-    }
-    public static void main(String args[]){
-        int [] arr = {0 , 1, 0, 3, 12};
-        moveZeros(arr);
+        System.out.println("maximum water = " + maxwater);
     }
 }
