@@ -1,18 +1,21 @@
- public class Stars{
-    public static int removeDuplicates(int [] arr){
-        int i = 0;
-
-        for(int j = 0; j<arr.length; j++){
-            if(arr[i] != arr[j]){
-                j++;
+public class Stars{
+    public static void moveZeros(int [] arr){
+        int j = 0;
+        for(int i = 0; i<arr.length; i++){
+            if(arr[i] != 0){
+                int temp = arr[i];
                 arr[i] = arr[j];
+                arr[j] = temp;
+                j++;
+                i--;
             }
         }
-        return i + 1;
+        for(int x : arr){
+        System.out.print(x + " ");
+        }
     }
     public static void main(String args[]){
-        int [] arr = {1,1,2,2,3,4,4};
-
-        System.out.println(removeDuplicates(arr));
+        int [] arr = {0 , 1, 0, 3, 12};
+        moveZeros(arr);
     }
- }
+}
