@@ -1,10 +1,9 @@
 public class Stars{
     public static void main(String args[]){
-        boolean x = true;
-        boolean y = false;
-
-        System.out.println("x && y : " + (x && y));
-        System.out.println("x || y :" + (x || y));
-        System.out.println("!x : " + (!x));
+        boolean isJavaFun = true;
+        boolean isFishTasty = false;
+        
+        System.out.println("Is Java Fun? " + isJavaFun);
+        System.out.println("Is fish tasty?" + isFishTasty);
     }
 }
