@@ -1,9 +1,9 @@
 public class Stars{
     public static void main(String args[]){
-        long worldPopulation = 78000000000L;
-        long lightYears = 94607304472580800L;
+        float pi = 3.14f;
+        float gravity = 9.81f;
 
-        System.out.println("WorldPopulation:-" + worldPopulation);
-        System.out.println("Light Years :-" + lightYears);
+        System.out.println("Pi :- " + pi);
+        System.out.println("Gravity :- " + gravity);
     }
 }
