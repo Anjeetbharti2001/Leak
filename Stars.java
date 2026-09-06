@@ -1,9 +1,10 @@
 public class Stars{
     public static void main(String args[]){
-        byte age = 25;
-        byte temperature = -10;
+        int population = 20000000;
+        int distance = 1500000000;
 
-        System.out.println("Age :" + age);
-        System.out.println("Temperature:-" + temperature);
+
+        System.out.println("population :" + population);
+        System.out.println("Distance:-" + distance);
     }
 }
