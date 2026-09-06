@@ -1,10 +1,9 @@
 public class Stars{
     public static void main(String args[]){
-        int population = 20000000;
-        int distance = 1500000000;
+        long worldPopulation = 78000000000L;
+        long lightYears = 94607304472580800L;
 
-
-        System.out.println("population :" + population);
-        System.out.println("Distance:-" + distance);
+        System.out.println("WorldPopulation:-" + worldPopulation);
+        System.out.println("Light Years :-" + lightYears);
     }
 }
