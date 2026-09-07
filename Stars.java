@@ -1,14 +1,9 @@
-interface Animal {
-    void sound();
-}
-class Dog implements Animal {
-    public void sound(){
-        System.out.println("Anjeet");
-    }
-}
 public class Stars{
     public static void main(String args[]){
-        Animal dog =  new Dog();
-        dog.sound();
+        int [] numbers = {1,2,3,4,5};
+        String [] names = {"Anjeet", "Bharti", " Dear Anjeet"};
+
+        System.out.println("First number :" + numbers[0]);
+        System.out.println("Second name :" + names[1]);
     }
 }
