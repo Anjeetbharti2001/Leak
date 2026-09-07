@@ -1,17 +1,14 @@
-class Car {
-    String model;
-    int year;
-
-    Car(String model, int year){
-        this.model = model;
-        this.year = year;
+interface Animal {
+    void sound();
+}
+class Dog implements Animal {
+    public void sound(){
+        System.out.println("Anjeet");
     }
 }
-
 public class Stars{
     public static void main(String args[]){
-        Car myCar = new Car ("Honda", 2021);
-        System.out.println("Model : " + myCar.model);
-        System.out.println("Year : " + myCar.year);
+        Animal dog =  new Dog();
+        dog.sound();
     }
 }
