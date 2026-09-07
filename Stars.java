@@ -1,19 +1,17 @@
-class Car{
+class Car {
     String model;
     int year;
 
     Car(String model, int year){
-       this.model = model;
-       this.year = year;
-    }
-    void display(){
-        System.out.println(model + " " + year);
+        this.model = model;
+        this.year = year;
     }
 }
 
 public class Stars{
     public static void main(String args[]){
-        Car myCar = new Car("Toyota", 2020);
-        myCar.display();
+        Car myCar = new Car ("Honda", 2021);
+        System.out.println("Model : " + myCar.model);
+        System.out.println("Year : " + myCar.year);
     }
 }
