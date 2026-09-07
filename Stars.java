@@ -1,9 +1,19 @@
+class Car{
+    String model;
+    int year;
+
+    Car(String model, int year){
+       this.model = model;
+       this.year = year;
+    }
+    void display(){
+        System.out.println(model + " " + year);
+    }
+}
+
 public class Stars{
     public static void main(String args[]){
-        String name = "Stars1";
-        String message = "Welcome to Anjeet";
-
-        System.out.println("Name : " + name);
-        System.out.println("Message : " + message);
+        Car myCar = new Car("Toyota", 2020);
+        myCar.display();
     }
 }
