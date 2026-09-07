@@ -1,9 +1,9 @@
 public class Stars{
     public static void main(String args[]){
-        char grade = 'A';
-        char symbol = '$';
+        String name = "Stars1";
+        String message = "Welcome to Anjeet";
 
-        System.out.println("Grade : " + grade);
-        System.out.println("Symbol : " + symbol);
+        System.out.println("Name : " + name);
+        System.out.println("Message : " + message);
     }
 }
