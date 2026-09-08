@@ -1,22 +1,16 @@
 import java.util.*;
 
-
 public class Stars{
     public static void main(String args[]){
-        List<Integer> list = Arrays.asList(2, 4,6,8,10);
-        int key = 6;
-        
-        //Linear search
-        System.out.println("Linear Search :" + list.contains(key));
+        // Arrays example
+        int [] nums = {5, 3, 8, 1};
+        Arrays.sort(nums);
+        System.out.println("Sorted arrays : " + Arrays.toString(nums));
 
-        //Binary search using 
+        // List Example
 
-        int index = Collections.binarySearch(list, key);
-
-        if(index >= 0){
-            System.out.println("Element found at index :" + index);
-        }else{
-            System.out.println("Element not found:-");
-        }
+        List<Integer> list = new ArrayList<>(Arrays.asList(5,3,8,1));
+        Collections.sort(list);
+        System.out.println("Sorted list :" + list);
     }
 }
