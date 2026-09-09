@@ -4,7 +4,7 @@ public class Stars{
         int a = 10, b = 3;
 
         // addition
-        int sum = a + b;
-        System.out.println("addition: " + sum);
+        int diff = a - b;
+        System.out.println("difference: " + diff);
     }
 }
