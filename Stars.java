@@ -3,8 +3,8 @@ public class Stars{
         // Arithmetic Operators
         int a = 10, b = 3;
 
-        // addition
-        int diff = a - b;
-        System.out.println("difference: " + diff);
+        // multiplication
+        int mul = a * b;
+        System.out.println("multiplication: " + mul);
     }
 }
