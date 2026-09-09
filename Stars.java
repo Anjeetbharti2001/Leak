@@ -3,8 +3,8 @@ public class Stars{
         // Arithmetic Operators
         int a = 10, b = 3;
 
-        // Division
-        int div = a / b;
-        System.out.println("division: " + div);
+        // Modulus
+        int mod = a % b;
+        System.out.println("Modulus: " + mod);
     }
 }
