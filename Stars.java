@@ -1,10 +1,10 @@
 public class Stars{
     public static void main(String args[]){
-        String s = "hi anjeet";
-        System.out.println(s);
+        // Arithmetic Operators
+        int a = 10, b = 3;
 
-        StringBuilder sb = new StringBuilder("Anjeet"+ " ");
-        sb.append("Anjeet");
-        System.out.println(sb.toString());
+        // addition
+        int sum = a + b;
+        System.out.println("addition: " + sum);
     }
 }
