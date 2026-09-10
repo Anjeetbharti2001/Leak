@@ -5,8 +5,11 @@ public class Stars{
         int b = 10;
 
         // Using Unary Operators
-        System.out.println("PostIncreament :-" + (a++));
-        System.out.println("PreIncreament:-" + (++a));
+        // System.out.println("PostIncreament :-" + (a++));
+        // System.out.println("PreIncreament:-" + (++a));
+
+        System.out.println("PostDecreament :-" + (b--));
+        System.out.println("Predecreament:-" + (--b));
 
     }
 }
