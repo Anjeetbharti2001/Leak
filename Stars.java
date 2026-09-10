@@ -1,10 +1,12 @@
 public class Stars{
     public static void main(String args[]){
-        // Arithmetic Operators
-        int a = 10, b = 3;
+        //Integer declared
+        int a = 10;
+        int b = 10;
 
-        // Modulus
-        int mod = a % b;
-        System.out.println("Modulus: " + mod);
+        // Using Unary Operators
+        System.out.println("PostIncreament :-" + (a++));
+        System.out.println("PreIncreament:-" + (++a));
+
     }
 }
