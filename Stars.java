@@ -1,8 +1,9 @@
 public class Stars{
     public static void main(String args[]){
-        int a = 20, b = 10, c = 30, result;
+       //Bitwise operators
+       int d = 0b1010;
+       int e = 0b1100;
 
-        result = ((a > b) ? (a > c) ? a : c : (b > c ) ? b : c);
-        System.out.println("Max of Three numbers = " + result);
+       System.out.println("d & e : " + (d & e));
     }
 }
