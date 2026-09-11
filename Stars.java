@@ -6,6 +6,7 @@ public class Stars{
 
     //    System.out.println("d & e : " + (d & e));
     // System.out.println("d | e : " + (d | e));
-    System.out.println("d ^ e : " + (d ^ e));
+    // System.out.println("d ^ e : " + (d ^ e));
+    System.out.println(" ~d : " + (~d));
     }
 }
