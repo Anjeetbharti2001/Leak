@@ -1,21 +1,8 @@
 public class Stars{
     public static void main(String args[]){
-        // Initial value
-        
-        int num = 10;
-        // System.out.println("Initial : " + num);
+        int a = 20, b = 10, c = 30, result;
 
-        // add 5 -> num = num + 5
-        // num += 5;
-        // System.out.println("After +5 :" + num);
-
-        //multiplication 
-        // num *= 2;
-        // System.out.println("after * 2 :" + num);
-
-        // Subtract 5 -> num = num -5
-        num -= 5;
-        System.out.println("After -5 :-" + num );
-
+        result = ((a > b) ? (a > c) ? a : c : (b > c ) ? b : c);
+        System.out.println("Max of Three numbers = " + result);
     }
 }
