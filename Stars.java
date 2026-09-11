@@ -5,6 +5,7 @@ public class Stars{
        int e = 0b1100;
 
     //    System.out.println("d & e : " + (d & e));
-    System.out.println("d | e : " + (d | e));
+    // System.out.println("d | e : " + (d | e));
+    System.out.println("d ^ e : " + (d ^ e));
     }
 }
