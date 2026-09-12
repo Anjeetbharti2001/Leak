@@ -1,11 +1,10 @@
 public class Stars{
     public static void main(String args[]){
-       //Bitwise operators
-       int d = 0b1010;
-       int e = 0b1100;
+        String str = "Hello";
+        System.out.println(str instanceof String);
 
-    
-    // System.out.println("e >> 1" + (e >> 1));
-    System.out.println("e >>> 1 : " + (e >>> 1));
+        Object obj = 10;
+        System.out.println(obj instanceof Integer);
+        System.out.println(obj instanceof String);
     }
 }
