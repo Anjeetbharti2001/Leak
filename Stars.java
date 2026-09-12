@@ -5,6 +5,7 @@ public class Stars{
        int e = 0b1100;
 
     
-    System.out.println("e >> 1" + (e >> 1));
+    // System.out.println("e >> 1" + (e >> 1));
+    System.out.println("e >>> 1 : " + (e >>> 1));
     }
 }
