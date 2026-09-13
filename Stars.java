@@ -1,8 +1,11 @@
-public class Stars {
+public class Stars{
     public static void main(String args[]){
-        int i = 1;
+        int  i = 10;
 
-            System.out.println("Condition is False:-" + (i < 4));
-        
+        if(i < 5){
+            System.out.println("condition is true");
+        }else{
+            System.out.println("condition is false");
+        }
     }
 }
