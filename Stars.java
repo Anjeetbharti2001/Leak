@@ -1,11 +1,8 @@
-public class Stars{
+public class Stars {
     public static void main(String args[]){
-       int i = 7;
+        int i = 6;
 
-       if(i < 15){
-        System.out.println("I is Smaller than 15");
-       }else{
-        System.out.println("I is greater than 15");
-       }
+            System.out.println("Condition is False:-" + (i < 4));
+        
     }
 }
