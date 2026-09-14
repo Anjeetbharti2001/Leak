@@ -1,15 +1,15 @@
 public class Stars{
     public static void main(String args[]){
-        int i = 10;
+        int i = 20;
 
-        // Outer if statement 
-        if(i < 15){
-            System.out.println("I is smaller than 15");
-
-            // Nested if statement 
-            if(i == 10){
-                System.out.println("I is exactly 10");
-            }
+        if(i == 10){
+            System.out.println("I is 10");
+        }else if(i == 15){
+            System.out.println("I is 15");
+        }else if(i == 20){
+            System.out.println("I is 20");
+        }else{
+            System.out.println("I is not present");
         }
     }
 }
