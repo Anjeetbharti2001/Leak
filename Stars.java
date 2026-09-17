@@ -1,19 +1,13 @@
 public class Stars{
-    public static void main(String args[]){
-        // creating object 
-        Stars obj = new Stars();
+    private int balance = 100;
 
-        // calling instance method by passing value
-        obj.add(2,3);
-        System.out.println("Stars!");
+    // Accessor method(getter)
+    public int getBalance(){
+        return balance;
     }
-    // Instance method with parameter
-    void add(int a, int b){
-        // local variables
-        int x = a;
-        int y = b;
-        int z = x + y;
-
-        System.out.println("Sum : " + z);
+    public static void main(String args[]){
+       Stars acc = new Stars();
+       System.out.println(
+        "balance : " + acc.getBalance());
     }
 }
