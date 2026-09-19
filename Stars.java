@@ -1,7 +1,13 @@
 public class Stars{
     public static void main(String args[]){
-        // character variable 
-        boolean isJavaFun = true;
-        System.out.println("Is java fun? " + isJavaFun);
+        int a = 1, b = 2;
+
+        if(a < b){
+            System.out.println(a > b);
+        }else if(a > b){
+            System.out.println(a);
+        }else{
+            System.out.println(a + "==" + b);
+        }
     }
 }
