@@ -1,14 +1,12 @@
-class Employee{
-    int salary = 70000;
-}
-//Inherited or Sub Class
-class Engineer extends Employee {
-    int benefits = 15000;
-}
 
 public class Stars{
     public static void main(String args[]){
-        Engineer E1 = new Engineer();
-        System.out.println("Salary : " + E1.salary + "\nBenefits : " + E1.benefits);
+         int a = 3;
+
+         //Casting to Large datatype
+         double db = (double)a;
+
+         // Print and display the casted value
+         System.out.println(db);
     }
 }
