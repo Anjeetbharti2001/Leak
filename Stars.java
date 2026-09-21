@@ -1,12 +1,16 @@
-
 public class Stars{
     public static void main(String args[]){
-         int a = 3;
+        int[] arr = new int[5];
 
-         //Casting to Large datatype
-         double db = (double)a;
-
-         // Print and display the casted value
-         System.out.println(db);
+        // Allocating memory to the element 
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = 40;
+        arr[4] = 50;
+        
+        for(int i = 0; i<arr.length; i++){
+            System.out.println("arr[" + i + "] :" + arr[i]);
+        }
     }
 }
