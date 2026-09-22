@@ -1,12 +1,21 @@
-public class Stars{
-    static <T> void genericDisplay(T element){
-        System.out.println(element.getClass().getName() + " = " + element);
+class MultithreadingDemo extends Thread{
+    public void run(){
+        try {
+            // Display the thread that is running 
+            System.out.println("Thread " + Thread.currentThread().getId() + " is runnig");
+        }catch (Exception e ){
+            // Throwing an Exception
+            System.out.println("Exception is Caught");
+        }
     }
+}
+
+public class Stars{
     public static void main(String args[]){
-         genericDisplay(11);
-
-         genericDisplay("AnjeetBharti");
-
-         genericDisplay(1.0);
+       int n = 8;
+       for(int i = 0; i < n ; i++){
+        MultithreadingDemo object = new MultithreadingDemo();
+        object.start();
+       }
     }
 }
