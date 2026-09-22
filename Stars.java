@@ -1,21 +1,42 @@
-class MultithreadingDemo extends Thread{
-    public void run(){
-        try {
-            // Display the thread that is running 
-            System.out.println("Thread " + Thread.currentThread().getId() + " is runnig");
-        }catch (Exception e ){
-            // Throwing an Exception
-            System.out.println("Exception is Caught");
-        }
-    }
-}
+// public class Stars{
+//     public static void main(String args[]){
+//         int arr [] = {10, 20, 40};
+//         int n = arr.length;
 
+//         System.out.println("Primitive Arrays -> ");
+//         for(int i = 0; i< n ; i++){
+//             System.out.println(arr[i] + " ");
+
+//             System.out.println();
+
+//             String[] names = {"Lakshmi", "Rahul", "Pankaj"};
+
+//             System.out.print("Non - Primitive Arraya -> ");
+//             for(int i = 0; i < names.length; i++ ){
+//                 System.out.println(names[i] + " ");
+//             }
+//         }
+//     }
+//
 public class Stars{
-    public static void main(String args[]){
-       int n = 8;
-       for(int i = 0; i < n ; i++){
-        MultithreadingDemo object = new MultithreadingDemo();
-        object.start();
-       }
+    
+    public static void main(String[] args){
+        
+        // Primitive array
+        int[] arr = {10, 20, 30, 40};
+        int n = arr.length;
+
+        System.out.print("Primitive Array -> ");
+        for (int i = 0; i < n; i++)
+            System.out.print(arr[i] + " ");
+
+        System.out.println();
+
+        // Non-primitive array (String objects)
+        String[] names = {"Lakshit", "Rahul", "Pankaj"};
+
+        System.out.print("Non-Primitive Array -> ");
+        for (int i = 0; i < names.length; i++)
+            System.out.print(names[i] + " ");
     }
 }
