@@ -1,11 +1,9 @@
 public class Stars{
     public static void main(String args[]){
-        int[] arr = {2, 4, 8, 12};
+        int []arr = {2,4,8,12, 16};
 
-        // Accending fourth element 
-        System.out.println(arr[3] + " ");
-
-        // Accending  first Element
-        System.out.println(arr[0]);
+        // Updating first element
+        arr[0] = 90;
+        System.out.print(arr[0]);
     }
 }
