@@ -1,42 +1,11 @@
-// public class Stars{
-//     public static void main(String args[]){
-//         int arr [] = {10, 20, 40};
-//         int n = arr.length;
-
-//         System.out.println("Primitive Arrays -> ");
-//         for(int i = 0; i< n ; i++){
-//             System.out.println(arr[i] + " ");
-
-//             System.out.println();
-
-//             String[] names = {"Lakshmi", "Rahul", "Pankaj"};
-
-//             System.out.print("Non - Primitive Arraya -> ");
-//             for(int i = 0; i < names.length; i++ ){
-//                 System.out.println(names[i] + " ");
-//             }
-//         }
-//     }
-//
 public class Stars{
-    
-    public static void main(String[] args){
-        
-        // Primitive array
-        int[] arr = {10, 20, 30, 40};
-        int n = arr.length;
+    public static void main(String args[]){
+        int[] arr = {2, 4, 8, 12};
 
-        System.out.print("Primitive Array -> ");
-        for (int i = 0; i < n; i++)
-            System.out.print(arr[i] + " ");
+        // Accending fourth element 
+        System.out.println(arr[3] + " ");
 
-        System.out.println();
-
-        // Non-primitive array (String objects)
-        String[] names = {"Lakshit", "Rahul", "Pankaj"};
-
-        System.out.print("Non-Primitive Array -> ");
-        for (int i = 0; i < names.length; i++)
-            System.out.print(names[i] + " ");
+        // Accending  first Element
+        System.out.println(arr[0]);
     }
 }
