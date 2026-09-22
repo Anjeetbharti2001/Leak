@@ -1,8 +1,18 @@
 public class Stars{
     public static void main(String args[]){
-        int arr[] = {2, 4, 8, 12, 16};
+        int arr[] = {3, 1, 2, 5, 4};
 
-        
-        System.out.println("Size of Arrays : " + arr.length);
+        // passing arrays to method m1
+        sum(arr);
+    }
+    public static void sum(int[]arr){
+        // getting sum of arrays values
+        int sum = 0;
+
+        for(int i = 0; i < arr.length; i++){
+            sum += arr[i];
+
+            System.out.println("Sum of arrays values : " + sum );
+        }
     }
 }
