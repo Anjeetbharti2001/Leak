@@ -1,15 +1,13 @@
 public class Stars{
     public static void main(String args[]){
-        int arr[] = { 3, 1, 2, 5, 4};
 
-        //passing arrays to methods m1
-        sum(arr);
+        int arr[] = m1();
+
+        for(int i = 0; i< arr.length; i++)
+            System.out.println(arr[i] + " ");
+       
     }
-    public static void sum(int [] arr){
-        int sum = 0;
-        for(int i = 0; i< arr.length; i++){
-            sum += arr[i];
-            System.out.println("sum of arrays value : " + sum );
-        }
+    public static int[] m1(){
+        return new int [] { 1, 2, 3};
     }
 }
