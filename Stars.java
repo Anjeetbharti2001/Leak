@@ -1,10 +1,20 @@
-  class Taste {
-    static void hello() {
-        System.out.println("Hello");
+public class Stars{
+    static int a = 40;
+
+    int b = 50;
+
+    void simpleDisplay(){
+        System.out.println(a);
+        System.out.println(b);
     }
-}
-public class Stars {
-    public static void main(String[] args) {
-        Taste.hello(); // Call static method directly
+
+    static void staticDisplay(){
+        System.out.println(a);
+    }
+    public static void main(String args[]){
+        Stars obj = new Stars();
+        obj.simpleDisplay();
+
+        staticDisplay();
     }
 }
