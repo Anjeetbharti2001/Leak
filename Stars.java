@@ -1,11 +1,20 @@
+import java.util.*;
+
 public class Stars{
     public static void main(String args[]){
-        int b = 357;
+        Character ch = 'a';
 
-        // Autoboxing : primitive int -> Integer object 
-        Integer a = b;
+        // Unboxing : Character -> char
 
-        System.out.println("The primitive int b is : " + b);
-        System.out.println("The Integer object a is : " + a);
+        char c = ch;
+
+        ArrayList <Integer > list = new ArrayList<>();
+
+        list.add(24);
+        // Unboxing : Integer -> int
+
+        int num = list.get(0);
+
+        System.out.println(num);
     }
 }
