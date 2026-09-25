@@ -1,20 +1,7 @@
-import java.util.*;
-
 public class Stars{
     public static void main(String args[]){
-        Character ch = 'a';
-
-        // Unboxing : Character -> char
-
-        char c = ch;
-
-        ArrayList <Integer > list = new ArrayList<>();
-
-        list.add(24);
-        // Unboxing : Integer -> int
-
-        int num = list.get(0);
-
-        System.out.println(num);
+        for(int i = 2; i <= 10 ; i += 2){
+            System.out.print(i + " ");
+        }
     }
 }
