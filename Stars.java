@@ -1,20 +1,11 @@
 public class Stars{
-    static int a = 40;
-
-    int b = 50;
-
-    void simpleDisplay(){
-        System.out.println(a);
-        System.out.println(b);
-    }
-
-    static void staticDisplay(){
-        System.out.println(a);
-    }
     public static void main(String args[]){
-        Stars obj = new Stars();
-        obj.simpleDisplay();
+        int b = 357;
 
-        staticDisplay();
+        // Autoboxing : primitive int -> Integer object 
+        Integer a = b;
+
+        System.out.println("The primitive int b is : " + b);
+        System.out.println("The Integer object a is : " + a);
     }
 }
