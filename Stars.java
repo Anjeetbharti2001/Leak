@@ -1,11 +1,9 @@
 public class Stars{
-    //An example method
-    public void printMessage(){
-        System.out.println("Anjeet Bharti");
+    void hello(){
+        System.out.println("This is user-defined method.");
     }
     public static void main(String args[]){
         Stars obj = new Stars();
-
-        obj.printMessage();
+        obj.hello();
     }
 }
