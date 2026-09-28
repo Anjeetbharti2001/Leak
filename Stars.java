@@ -1,7 +1,9 @@
 public class Stars{
     public static void main(String args[]){
-        for(int i = 0; i<= 10; i++){
-            System.out.print(i + " ");
+        String[] names = { "Sweta", "Gudly", "Amiya"};
+
+        for(String name : names){
+            System.out.println("Name : " + name);
         }
     }
 }
