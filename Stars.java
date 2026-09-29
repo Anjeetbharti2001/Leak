@@ -2,14 +2,16 @@ import java.util.ArrayList;
 
 class Stars {
     public static void main(String[] args) {
-        char ch = 'a';
 
-        // Autoboxing: char -> Character
-        Character c = ch;
+        Character ch = 'a';
+        // Unboxing: Character -> char
+        char c = ch;
 
         ArrayList<Integer> list = new ArrayList<>();
-        // Autoboxing: int -> Integer
-        list.add(25);
-        System.out.println(list.get(0));
+        list.add(24);
+        // Unboxing: Integer -> int
+        int num = list.get(0);
+
+        System.out.println(num);
     }
 }
