@@ -1,17 +1,10 @@
-import java.util.ArrayList;
-
-class Stars {
-    public static void main(String[] args) {
-
-        Character ch = 'a';
-        // Unboxing: Character -> char
-        char c = ch;
-
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(24);
-        // Unboxing: Integer -> int
-        int num = list.get(0);
-
-        System.out.println(num);
+public class Stars{
+    public static void main(String args[]){
+        for(int i = 0; i < 5; i++){
+            if( i == 2){
+                continue;
+            }
+            System.out.println(i);
+        }
     }
 }
