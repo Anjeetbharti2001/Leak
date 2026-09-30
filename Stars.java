@@ -1,9 +1,9 @@
 public class Stars{
     public static void main(String args[]){
-        for(int i = 0; i < 5; i++){
-            if( i == 2){
-                continue;
-            }
+        int n = 10; 
+        for(int i = 0; i < n ; i++){
+            if( i == 4)
+                break;
             System.out.println(i);
         }
     }
