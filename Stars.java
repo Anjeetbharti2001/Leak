@@ -1,19 +1,16 @@
 public class Stars{
     public static void main(String args[]){
-        //Declaring a 2d arrays
-        int[][]  arr;
+        //Arrays Intialised and Assigned
+        int[][]  arr = { {1, 2 }, {3, 4}};
 
-        // Initializing row and column sizes
-        arr = new int[1][3];
+        // Printing the arrays
+        for(int i = 0; i< 2; i++){
+            for(int j = 0; j < 2; j++){
+                System.out.print(arr[i][j] + " ");
+                System.out.println();
+            }
+        }
 
-        // Assigning values
-        arr[0][0] = 3;
-        arr[0][1] = 5;
-        arr[0][2] = 7;
-
-        // Displaying values
-        System.out.println("Arr[0][0] = " + arr[0][0]);
-        System.out.println("arr[0][1] = " + arr[0][1]);
-        System.out.println("arr[0][2] = " + arr[0][2]);
+        
     }
 }
