@@ -1,14 +1,13 @@
 import java.util.*;
 public class Stars{
   public static void main(String args[]){
-    // Get the Arrays
+    // Get the Arrays 
     int intArr[] = { 10, 20, 15, 22, 35 };
 
-    Arrays.sort(intArr);
+    // Get the second Arrays
+    int intArr1[] = { 10, 15, 22};
 
-    int intKey = 22;
-
-    // Print the key and corresponding index
-    System.out.println( intKey + " found at index = " + Arrays.binarySearch(intArr, intKey));
+    // To compare arrays
+    System.out.println("Int Arrays on comparison : " + Arrays.compare(intArr, intArr));
   }
 }
