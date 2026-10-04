@@ -1,13 +1,9 @@
 import java.util.*;
 public class Stars{
   public static void main(String args[]){
-    // Get the Arrays 
-    int intArr[] = { 10, 20, 15, 22, 35 };
+    int [] arr1 = { 1, 2, 3, 4 };
+    int [] arr2 = { 1, 2, 3, 4 };
 
-    // Get the second Arrays
-    int intArr1[] = { 10, 15, 22};
-
-    // To compare arrays
-    System.out.println("Int Arrays on comparison : " + Arrays.compare(intArr, intArr));
+    System.out.println("" + Arrays.compare(arr1, arr2));
   }
 }
