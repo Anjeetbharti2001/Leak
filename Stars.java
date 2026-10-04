@@ -1,14 +1,16 @@
-import java.io.*;
+class Test{
+String n = "";
+  //Instance Method
+  public void test(String n){ this.n = n;}
+}
 
-class Stars
-{
-    public static void main(String[] args){
+public class Stars{
+  public static void main(String args[]){
+      // create an instance of the class
+        Test t = new Test();
 
-      	// Creating an Array
-        int[][][] arr = { { { 1, 2 }, { 3, 4 } },
-                         { { 5, 6 }, { 7, 8 } } };
-
-      	// Printing array at index 0 , 0 , 0
-        System.out.println("arr[0][0][0] = " + arr[0][0][0]);
-    }
+        // calling an instance method in the class 'Geeks'
+        t.test("GeeksforGeeks");
+        System.out.println(t.n);
+  }
 }
