@@ -1,12 +1,9 @@
 public class Stars{
     public static void main(String args[]){
-        int[] arr = { 2, 4, 8, 12, 16 };
+       int[] arr = { 2,5,6,7,8,44, 23};
 
-        // Accessing fourth element
-        System.out.println(arr[3] + " ");
-
-        // Accessing first element
-
-        System.out.println(arr[0]);
+       // Updating first element 
+       arr[0] = 90;
+       System.out.println(arr[0]);
     }
 }
