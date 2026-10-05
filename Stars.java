@@ -1,21 +1,12 @@
-import java.util.Arrays;
-import java.util.List;
+public class Stars{
+    public static void main(String args[]){
+        int[] arr = { 2, 4, 8, 12, 16 };
 
-public class Stars {
-    public static void main(String[] args) {
-        
-        // Creating an array of Integer type
-        Integer[] a = {1, 2, 3, 4, 5};
+        // Accessing fourth element
+        System.out.println(arr[3] + " ");
 
-        // Getting the list view of the array
-        List<Integer> l = Arrays.asList(a);
-        
-        // Printing the list
-        System.out.println("" + l);
-        
-        // A change made in the array would also
-        // reflect in the list    
-        a[2] = 20;
-        System.out.println("" + l.get(2));
+        // Accessing first element
+
+        System.out.println(arr[0]);
     }
 }
