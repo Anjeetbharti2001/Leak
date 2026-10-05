@@ -1,12 +1,19 @@
 public class Stars{
     public static void main(String args[]){
-        int[] arr = new int[4];
-        arr[0] = 10;
-        arr[1] = 20;
-        arr[2] = 30;
-        arr[3] = 40;
+        int arr[] = { 3, 1, 2, 5, 4 };
 
-        System.out.println("Trying to access element outside the size of arrays");
-        System.out.println(arr[5]);
+        // passing arrays to methods m1
+        sum(arr);
+    }
+
+    public static void sum(int[] arr){
+        // getting sum of values
+        int sum = 0;
+
+        for(int i = 0; i < arr.length; i++){
+            sum += arr[i];
+
+            System.out.println("sum of arrays values : " + sum);
+        }
     }
 }
