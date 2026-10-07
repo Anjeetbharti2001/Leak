@@ -1,14 +1,21 @@
 import java.util.Arrays;
+import java.util.List;
 
-public class Stars{
-  
-    public static void main(String[] args) 
-    {
-        // Initialize two float array with element
-        float[] arr1={5.12f, 8.3f, 9.17f, 2.5f, 8.3f, 5.17f, 4.2f, 7.37f};
-        float[] arr2={7.52f, 9.3f, 6.17f, 7.5f, 5.5f, 7.17f, 3.2f, 6.37f};
-      
-        // compare two float array using compare method and finally print result
-        System.out.println("" + Arrays.compare(arr1, arr2));
+public class Stars {
+    public static void main(String[] args) {
+        
+        // Creating an array of Integer type
+        Integer[] a = {1, 2, 3, 4, 5};
+
+        // Getting the list view of the array
+        List<Integer> l = Arrays.asList(a);
+        
+        // Printing the list
+        System.out.println("" + l);
+        
+        // A change made in the array would also
+        // reflect in the list    
+        a[2] = 20;
+        System.out.println("" + l.get(2));
     }
 }
