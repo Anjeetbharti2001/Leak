@@ -1,21 +1,27 @@
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Stars {
-    public static void main(String[] args) {
-        
-        // Creating an array of Integer type
-        Integer[] a = {1, 2, 3, 4, 5};
 
-        // Getting the list view of the array
-        List<Integer> l = Arrays.asList(a);
-        
-        // Printing the list
-        System.out.println("" + l);
-        
-        // A change made in the array would also
-        // reflect in the list    
-        a[2] = 20;
-        System.out.println("" + l.get(2));
+    // Main driver method
+    public static void main(String[] argv) throws Exception
+    {
+        // Try block to check for exceptions
+        try {
+
+            // Creating Arrays of Integer type
+            Integer a[] = new Integer[] { 10, 20, 30, 40 };
+
+            // Getting the list view of Array
+            List<Integer> l = Arrays.asList(a);
+
+            // Printing all the elements inside list object
+            System.out.println("" + l);
+        }
+
+        // Catch block to handle exceptions
+        catch (NullPointerException e) {
+
+            System.out.println("Exception thrown: " + e);
+        }
     }
 }
