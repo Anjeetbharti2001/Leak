@@ -1,19 +1,36 @@
-public class Stars{
-    public static void main(String args[]){
-        int arr[] = { 3, 1, 2, 5, 4 };
+import java.util.*;
 
-        // passing arrays to methods m1
-        sum(arr);
+public class Stars {
+
+    private final String first, last;
+
+    public Stars(String first, String last) {
+        this.first = first;
+        this.last = last;
     }
 
-    public static void sum(int[] arr){
-        // getting sum of values
-        int sum = 0;
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Stars))
+            return false;
 
-        for(int i = 0; i < arr.length; i++){
-            sum += arr[i];
+        Stars n = (Stars) o;
+        return n.first.equals(first) && n.last.equals(last);
+    }
 
-            System.out.println("sum of arrays values : " + sum);
-        }
+    @Override
+    public int hashCode() {
+        return Objects.hash(first, last);
+    }
+
+    public static void main(String args[]) {
+
+        Set<Stars> s = new HashSet<Stars>();
+
+        s.add(new Stars("Shubham", "Juneja"));
+
+        System.out.println(
+            s.contains(new Stars("Shubham", "Juneja"))
+        );
     }
 }
