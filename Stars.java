@@ -1,12 +1,14 @@
+import java.util.*;
 public class Stars{
-    public static void main(String args[]){
-        int arr[] = m1();
+    public static void main( String args[]){
+        // Creating arrays of String type
 
-        for(int i = 0; i < arr.length; i++)
-            System.out.println(arr[i] + " ");
-    }
-    public static int[] m1(){
-        // retturning arrays
-        return new int[] { 1, 2, 3};
+        String[] a = {"A", "B", "C", "D"};
+
+        // getting arrays of String type
+        List<String> l = Arrays.asList(a);
+
+        // Printing all the elements int the list
+        System.out.println(l);
     }
 }
