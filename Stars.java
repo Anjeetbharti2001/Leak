@@ -1,6 +1,9 @@
-import java.io.*;
+import java.util.*;
+
 public class Stars{
     public static void main(String args[]){
-        System.out.println( "how we throw error with System.err");
+        Stars object =  new Stars();
+
+        System.out.println(object instanceof Stars);
     }
 }
