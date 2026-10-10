@@ -1,9 +1,7 @@
-import java.util.*;
-
 public class Stars{
     public static void main(String args[]){
-        Stars object =  new Stars();
+        int arr [] = {3, 5, 67,7,7,6};
 
-        System.out.println(object instanceof Stars);
+        System.out.println(arr[0]);
     }
 }
