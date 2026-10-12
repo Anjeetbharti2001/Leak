@@ -1,12 +1,23 @@
-class Student{
-    String name;
-    int age;
-}
 public class Stars{
-    public static void main(String args[]){
-      Student s = new Student();
+    // data members of the class 
+    String name;
+    int id;
 
-      System.out.println(s.name);
-      System.out.println(s.age);
+    // Parameterized Constructors
+    Stars(String name, int id){
+        this.name = name;
+        this.id = id;
+    }
+
+    // method to display object data
+    void display(){
+        System.out.println("StarsName : " + name + " and StarsId : " + id);
+    }
+    // Main()method - placed inside the same class for 
+
+    public static void main(String args[]){
+        // This will invoke the parameterized constructors
+        Stars star1 = new Stars("Anjeet", 25);
+        star1.display();
     }
 }
