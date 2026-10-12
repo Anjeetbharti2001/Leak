@@ -1,9 +1,15 @@
 public class Stars{
-    public static void main(String args[]){
-        int arr[] = { 3,6,7,8,9};
+    String name ;
 
-        
-            System.out.print(arr[4]);
-      
+    // Constructor
+    Stars(String name){
+        this.name = name ;
+    }
+    void display(){
+        System.out.println("Name : " + name);
+    }
+    public static void main(String args[]){
+        Stars s1 = new Stars("Anjeet");
+        s1.display();
     }
 }
