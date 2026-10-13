@@ -1,17 +1,17 @@
-import java.util.*;
+import java.io.*;
 
-public class Stars{
-   
+class Addition {
+    public static void main(String[] args)
+    {
+        // initializing variables
+        int num1 = 10, num2 = 20, sum = 0;
 
-    public static void main(String args[]){
-       
-    Scanner sc = new Scanner(System.in);
+        // Displaying num1 and num2
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
 
-    int x = sc.nextInt();
-    int y = sc.nextInt();
-
-    System.out.printf("Addition : %d ", x + y);
-      
+        // adding num1 and num2
+        sum = num1 + num2;
+        System.out.println("The sum = " + sum);
     }
-       
 }
