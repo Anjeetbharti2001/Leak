@@ -1,14 +1,13 @@
 public class Stars{
+    public static int ctr = 0;
+    public Stars(){ ctr++;}
+
     public static void main(String args[]){
-        int arr[] = {4, 8, 9, 2,6,3};
+        Stars obj1 = new Stars();
+        Stars obj2 = new Stars();
+        Stars obj3 = new Stars();
+       
 
-        // Updating first element 
-        arr[0] = 90;
-        System.out.println(arr[0]);
-
-        for(int i = 0; i<arr.length; i++){
-            System.out.print(arr[i] + " ");
-            System.out.println("size of arrays element : " + arr.length);
-        }
+        System.out.println("Number of objects created are " + Stars.ctr);
     }
 }
