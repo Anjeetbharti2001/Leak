@@ -5,5 +5,9 @@ public class Stars{
         // Updating first element 
         arr[0] = 90;
         System.out.println(arr[0]);
+
+        for(int i = 0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 }
