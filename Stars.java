@@ -1,7 +1,7 @@
 public class Stars{
     public static void main(String args[]){
         // initialization variables
-        int num1 = 20, num2 = 10, mult = 0;
+        int num1 = 20, num2 = 10, div = 0;
 
         //Displaying num1 and num2
         System.out.println("num1 = " + num1);
@@ -9,8 +9,8 @@ public class Stars{
 
         // subtracting num1 and num2
 
-        mult =  num1 * num2;
+        div =  num1 / num2;
 
-        System.out.println("Subtraction = " + mult);
+        System.out.println("Subtraction = " + div);
     }
 }
