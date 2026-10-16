@@ -1,15 +1,12 @@
-class Res {
+public class Res {
     String name;
+    int age;
 
-    // Constructor
-    Res(String name){
-        this.name = name;
-    }
-    void display(){
-        System.out.println("Name : " + name);
-    }
+
     public static void main(String[] args){
-        Res s1 = new Res("Anjeet");
-        s1.display();
+        Res s = new Res();
+        System.out.println(s.name);
+        System.out.println(s.age);
+        
     }
 }
