@@ -1,12 +1,12 @@
 public class Res {
-    String name;
-    int age;
+    String name = "Anjeet";
+    int age = 25;
 
 
     public static void main(String[] args){
         Res s = new Res();
-        System.out.println(s.name);
-        System.out.println(s.age);
+        System.out.println("Name : " + s.name);
+        System.out.println("Age"  + s.age);
         
     }
 }
