@@ -1,17 +1,15 @@
-public class Res{
-    // Driver Method
+import java.util.*;
+public class Res {
     public static void main(String args[]){
-        int arr[] = m1();
+         // Arrays example 
+         int[] arr = { 10, 20, 30, 40, 50};
+         System.out.println(Arrays.toString(arr));
 
-        for(int i = 0; i< arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
-
+         // ArrayList Example
+         ArrayList<Integer> list = new ArrayList<>();
+         list.add(10);
+         list.add(20);
+         list.add(30);
+         System.out.println(list);
     }
-
-    public static int[] m1(){
-        // returning arrays
-        return new int[] { 1, 2, 3};
-    }
-    
 }
