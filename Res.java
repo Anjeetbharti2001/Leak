@@ -1,13 +1,10 @@
+import java.io.*;
+
 public class Res{
   public static void main(String args[]){
-    int a = 15; 
-    int b = 23;
+    int a = Integer.parseInt(args[0]);
+    int b = Integer.parseInt(args[1]);
 
-    while ( b != 0){
-      int carry = a & b;
-      a = a ^ b;
-      b = carry << 1;
-    }
-    System.out.println("sum = " + a);
+    System.out.println("sum : " + (a + b));
   }
 }
