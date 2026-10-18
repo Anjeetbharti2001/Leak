@@ -1,10 +1,14 @@
-import java.io.*;
-
+import java.math.BigInteger;
 public class Res{
   public static void main(String args[]){
-    int a = Integer.parseInt(args[0]);
-    int b = Integer.parseInt(args[1]);
+    BigInteger sum ;
+    String input1 = "94824239498324234923422323546";
+    String input2 = "6484464684864864864864876543";
 
-    System.out.println("sum : " + (a + b));
+    BigInteger a = new BigInteger(input1);
+    BigInteger b = new BigInteger(input2);
+
+    sum = a.add(b);
+    System.out.println("Sum of two BigIntegers : " + sum );
   }
 }
