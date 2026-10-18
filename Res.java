@@ -1,10 +1,13 @@
 public class Res{
   public static void main(String args[]){
-    int a = 8;
-    int b =  8;
+    int a = 15; 
+    int b = 23;
 
-    // int sum = a + b;
-
-    System.out.println("Total of sum : " + (a + b));
+    while ( b != 0){
+      int carry = a & b;
+      a = a ^ b;
+      b = carry << 1;
+    }
+    System.out.println("sum = " + a);
   }
 }
