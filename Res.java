@@ -1,15 +1,29 @@
-public class Res{
-  static void reverse(String str){
-    if(str.length() == 0){
-      return;
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
     }
-    // recursive call 
-    reverse(str.substring(1));
-    //print first character at last
-    System.out.println(str.charAt(0));
-  }
-  public static void main(String args[]){
-    String str = "Hello";
-    reverse(str);
-  }
+}
+
+public class Res {
+    public static void main(String args[]) {
+
+        Node first = new Node(1);
+        Node second = new Node(2);
+        Node third = new Node(3);
+
+        first.next = second;
+        second.next = third;
+        third.next = null;
+
+        Node temp = first;
+
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+    }
 }
