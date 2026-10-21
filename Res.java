@@ -1,16 +1,9 @@
 public class Res{
   public static void main(String args[]){
-    String arr[] = { "Anjeet", "bharti", "pawan","sarjun" };
+    String arr[] = {"Pawan", "Sohan", "Sarjun","Santan"};
 
-    int i = 0;
-    arr[2] = "Sohan";
-   arr[1] = null;
-    // System.out.print(arr.length);
-
-    while( i < arr.length){
+    for(int i = 0; i<arr.length; i++){
       System.out.print(arr[i] + " ");
-      i++;
-    
     }
   }
 }
