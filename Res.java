@@ -3,10 +3,10 @@ public class Res{
     String arr[] = { "Anjeet", "bharti", "pawan","sarjun" };
 
     int i = 0;
-    System.out.print(arr.length);
+    // System.out.print(arr.length);
 
     while( i < arr.length){
-      System.out.println(arr[i]);
+      System.out.println(arr[3]);
       i++;
     
     }
