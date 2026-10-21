@@ -3,10 +3,11 @@ public class Res{
     String arr[] = { "Anjeet", "bharti", "pawan","sarjun" };
 
     int i = 0;
+    arr[2] = "Sohan";
     // System.out.print(arr.length);
 
     while( i < arr.length){
-      System.out.println(arr[3]);
+      System.out.print(arr[i] + " ");
       i++;
     
     }
