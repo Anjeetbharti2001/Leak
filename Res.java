@@ -4,6 +4,7 @@ public class Res{
 
 
     arr[4] = 90;
+    arr[0] = 33;
     for( int i = 0; i< arr.length; i++){
       System.out.print(arr[i] + " ");
     }
