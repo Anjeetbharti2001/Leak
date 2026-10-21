@@ -4,6 +4,7 @@ public class Res{
 
     int i = 0;
     arr[2] = "Sohan";
+   arr[1] = null;
     // System.out.print(arr.length);
 
     while( i < arr.length){
