@@ -2,22 +2,13 @@ import java.util.*;
 
 public class Res{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in );
-        
-        System.out.println("Enter size of Arrays:-");
+        String[] arr = { "Anjeet" , "Bharti", "Sohan", "Sarjun", "Amit" };
 
-        int n = sc.nextInt();
+        // sorting the String arrays
+        Arrays.sort(arr);
 
-        int arr[] = new int[n];
-        System.out.print("Enter arrays element:-");
-
-        for(int i = 0; i < n; i++){
-            arr[i] = sc.nextInt();
-        }
-        System.out.print("Arrays element:-");
-
-        for(int i = 0; i < n; i++){
-            System.out.print(arr[i] + " ");
+        for(String i : arr){
+            System.out.print( i + " ");
         }
     }
 }
