@@ -1,11 +1,23 @@
+import java.util.*;
+
 public class Res{
     public static void main(String args[]){
-        int arr[] = { 2, 7, 9, 4 ,5 , 6};
-       
-        arr[2] = 1;
+        Scanner sc = new Scanner(System.in );
         
-        for(int i = 0; i < arr.length; i++){
-            System.out.print( arr[i] + " ");
+        System.out.println("Enter size of Arrays:-");
+
+        int n = sc.nextInt();
+
+        int arr[] = new int[n];
+        System.out.print("Enter arrays element:-");
+
+        for(int i = 0; i < n; i++){
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Arrays element:-");
+
+        for(int i = 0; i < n; i++){
+            System.out.print(arr[i] + " ");
         }
     }
 }
