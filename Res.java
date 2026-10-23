@@ -2,13 +2,10 @@ import java.util.*;
 
 public class Res{
     public static void main(String args[]){
-        String[] arr = { "Anjeet" , "Bharti", "Sohan", "Sarjun", "Amit" };
+        String arr[] = { "She", "is", "a", "good", "girl"};
 
-        // sorting the String arrays
-        Arrays.sort(arr);
-
-        for(String i : arr){
-            System.out.print( i + " ");
-        }
+        // converting to string 
+        String s = Arrays.toString(arr);
+        System.out.println(s);
     }
 }
