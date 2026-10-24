@@ -1,26 +1,29 @@
-// java program to demonstrate the 
-// conversion of String arrays to String 
-
+// Java program to perform the searching 
+// operation on a string arrays
 public class Res{
     public static void main(String args[]){
-        // Initialize a String arrays with some elements
+       //Initialize a String array with some elements
 
-        String[] arr = { "She", "is", "a", "good", "girl"};
+       String[] arr = { "Apple", "Banana", "Orange" };
 
-        // Create a StringBuilder to build the resulting string 
-        StringBuilder sb = new StringBuilder();
+       // Key to search in the arrays
+       String k = "Banana";
 
-        // Append the first element of the arrays to the StringBuilder
+       // Flag to track if the key is found 
+       boolean f = false;
 
-        sb.append(arr[0]);
-        // Loop through the remaining elements in the array
-
-        for(int i = 1; i < arr.length; i++){
-            //Append the StringBuilder content into a String
-          sb.append(" " + arr[i]);
-           
+       // Iterate over the array to search for the key
+       for(int i = 0; i < arr.length; i++){
+        //check if the current element matches the key
+        if(arr[i] == k){
+            //If found, print the index and set the flag to true
+            System.out.println("Available at index " + i);
+            f = true;
         }
-        String s = sb.toString();
-         System.out.println(s);
+       }
+       // If the key is not found, print "Not found"
+       if( f == false){
+        System.out.println("Not found");
+       }
     }
 }
