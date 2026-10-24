@@ -1,11 +1,19 @@
-public class Res {
+public class Res{
     public static void main(String args[]){
-        int[] arr = { 1, 2, 3, 4, 5};
+        int[] marks = { 125, 132, 95, 116, 110};
+        int max = findMax(marks);
 
-        // Using for-each loop
+        System.out.println(max);
+    }
 
-        for (int e : arr){
-            System.out.print( e + " ");
+    static int findMax(int[] arr){
+        int maximum = arr[0];
+
+        for ( int value :arr){
+            if(value > maximum){
+                maximum = value;
+            }
         }
+        return maximum;
     }
 }
