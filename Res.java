@@ -1,19 +1,20 @@
+import java.util.*;
 public class Res{
     public static void main(String args[]){
-        int[] marks = { 125, 132, 95, 116, 110};
-        int max = findMax(marks);
+        List <Integer> list = new ArrayList<>();
+        list.add(3);
+        list.add(5);
+        list.add(7);
+        list.add(9);
 
-        System.out.println(max);
-    }
+        int max = Integer.MIN_VALUE;
 
-    static int findMax(int[] arr){
-        int maximum = arr[0];
-
-        for ( int value :arr){
-            if(value > maximum){
-                maximum = value;
+        for (int num : list ){
+            if(num > max){
+                max = num;
             }
         }
-        return maximum;
+        System.out.println("List of Integers : " + list);
+        System.out.println("Maxinum element : " + max);
     }
 }
