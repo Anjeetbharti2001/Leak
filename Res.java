@@ -1,28 +1,11 @@
-// Java program to demonstrate various 
-// methods to iterate over a string array
-
-public class Res{
+public class Res {
     public static void main(String args[]){
-        String[] arr = { "Anjeet", "Banana", "Orange" };
+        int[] arr = { 1, 2, 3, 4, 5};
 
-        // first method
-        for(String i : arr){
-            System.out.print( i + " ");
-        }
-        System.out.println();
-        // Second method 
-        for ( int i = 0; i < arr.length; i++){
-            System.out.print( arr[i] + " ");
-        }
-        System.out.println();
+        // Using for-each loop
 
-        //Third methods
-        int i = 0;
-
-        while ( i < arr.length){
-            System.out.print(arr[i] + " ");
-            i++;
+        for (int e : arr){
+            System.out.print( e + " ");
         }
-        System.out.println();
     }
 }
