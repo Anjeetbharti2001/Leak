@@ -1,20 +1,10 @@
-import java.util.*;
 public class Res{
     public static void main(String args[]){
-        List <Integer> list = new ArrayList<>();
-        list.add(3);
-        list.add(5);
-        list.add(7);
-        list.add(9);
+        int arr[] = { 3, 5, 67, 7, 8,9};
 
-        int max = Integer.MIN_VALUE;
-
-        for (int num : list ){
-            if(num > max){
-                max = num;
-            }
+        System.out.print(arr.length);
+        for(int i = 0; i<arr.length; i++){
+            System.out.print( arr[i] + " ");
         }
-        System.out.println("List of Integers : " + list);
-        System.out.println("Maxinum element : " + max);
     }
 }
