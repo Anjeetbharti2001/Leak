@@ -1,36 +1,57 @@
-class Node {
+// class Node {
+//     int data;
+//     Node left, right;
+//     Node(int data){
+//         this.data = data;
+//         left = null;
+//         right = null;
+//     }
+// }
+// public class Res{
+//     // Preorder traversal
+//     static void printTree(Node root){
+//         if(root == null){
+//             return;
+//         }
+//         System.out.print(root.data + " ");
+
+//         printTree(root.left);
+//         printTree(root.right);
+//     }
+//     public static void main(String args[]){
+//         Node root = new Node(1);
+//         root.left = new Node(2);
+//         root.right = new Node(3);
+
+//         root.left.right = new Node(4);
+//         root.left.left = new Node(5);
+
+//         root.right.right = new Node(6);
+//         root.right.left = new Node(7);
+
+//         // System.out.print("Total root :-" + root.data);
+
+//      printTree(root);
+//     }
+// }
+
+class Node{
     int data;
     Node left, right;
+
     Node(int data){
         this.data = data;
         left = null;
         right = null;
     }
 }
+
 public class Res{
-    // Preorder traversal
-    static void printTree(Node root){
-        if(root == null){
-            return;
-        }
-        System.out.print(root.data + " ");
-
-        printTree(root.left);
-        printTree(root.right);
-    }
     public static void main(String args[]){
-        Node root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(3);
+      Node root = new Node(4);
+      root.left = new Node(5);
+      root.right = new Node(6);
 
-        root.left.right = new Node(4);
-        root.left.left = new Node(5);
-
-        root.right.right = new Node(6);
-        root.right.left = new Node(7);
-
-        // System.out.print("Total root :-" + root.data);
-
-     printTree(root);
+      System.out.print("Root: " + root.data);
     }
 }
