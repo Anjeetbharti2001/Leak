@@ -8,6 +8,16 @@ class Node {
     }
 }
 public class Res{
+    // Preorder traversal
+    static void printTree(Node root){
+        if(root == null){
+            return;
+        }
+        System.out.print(root.data + " ");
+
+        printTree(root.left);
+        printTree(root.right);
+    }
     public static void main(String args[]){
         Node root = new Node(1);
         root.left = new Node(2);
@@ -16,9 +26,11 @@ public class Res{
         root.left.right = new Node(4);
         root.left.left = new Node(5);
 
-        root.right.right = new Node(6);
-        root.right.left = new Node(7);
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
 
-        System.out.print("Total root :-" + root.data);
+        // System.out.print("Total root :-" + root.data);
+
+     printTree(root);
     }
 }
