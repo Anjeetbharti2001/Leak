@@ -47,11 +47,24 @@ class Node{
 }
 
 public class Res{
+    // Preorder traversal Tree
+    static void printTree(Node root){
+        if(root == null){
+            return;
+        }
+        System.out.print(root.data + " ");
+
+        printTree(root.left);
+        printTree(root.right);
+    }
+
     public static void main(String args[]){
       Node root = new Node(4);
       root.left = new Node(5);
       root.right = new Node(6);
 
-      System.out.print("Root: " + root.data);
+    //   System.out.print("Root: " + root.data);
+
+    printTree(root);
     }
 }
