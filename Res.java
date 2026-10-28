@@ -1,61 +1,32 @@
-// class Node {
-//     int data;
-//     Node left, right;
-//     Node(int data){
-//         this.data = data;
-//         left = null;
-//         right = null;
-//     }
-// }
-// public class Res{
-//     // Preorder traversal
-//     static void printTree(Node root){
-//         if(root == null){
-//             return;
-//         }
-//         System.out.print(root.data + " ");
-
-//         printTree(root.left);
-//         printTree(root.right);
-//     }
-//     public static void main(String args[]){
-//         Node root = new Node(1);
-//         root.left = new Node(2);
-//         root.right = new Node(3);
-
-//         root.left.right = new Node(4);
-//         root.left.left = new Node(5);
-
-//         root.right.right = new Node(6);
-//         root.right.left = new Node(7);
-
-//         // System.out.print("Total root :-" + root.data);
-
-//      printTree(root);
-//     }
-// }
 
 class Node {
     int data;
-    Node left, right;
+    Node next;
     Node(int data){
         this.data = data;
-        left = null;
-        right = null;
+        this.next = null;
     }
 }
 
 public class Res{
     public static void main(String args[]){
-        Node root = new Node(5);
-        root.left = new Node(6);
-        root.right = new Node(7);
+        Node first = new Node(10);
+        Node second = new Node(20);
+        Node third = new Node(30);
+        Node fourth = new Node(40);
 
-        root.left.right = new Node(8);
-        root.right.left = new Node(9);
+        first.next = second;
+        second.next = third;
+        third.next = fourth;
 
-        System.out.println("root:" + root.data);
+        //Print all elements
+        Node temp = first;
 
+        while(temp != null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println("null");
 
     }
 }
