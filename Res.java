@@ -1,35 +1,31 @@
 class Node{
     int data;
-    Node left, right;
+    Node next;
     Node(int data){
         this.data = data;
-        Node left ,right = null;
+        this.next = null;
     }
 }
 public class Res{
-
-    static void printLeft(Node root){
-        if(root == null){
-            return;
-        }
-        if(root.left == null && root.right == null);
-        System.out.print(root.data + " ");
-
-        printLeft(root.left);
-        printLeft(root.right);
-    }
     public static void main(String args[]){
-        
-        Node root = new Node(5);
-        root.left = new Node(6);
-        root.right = new Node(7);
+         Node first = new Node(6);
+         Node second = new Node(7);
+         Node third = new Node(8);
+         Node fourth = new Node(9);
+         Node fifth = new Node(10);
 
-        root.left.left = new Node(8);
-        root.left.right = new Node(9);
+         first.next = second;
+         second.next = third;
+         third.next = fourth;
+         fourth.next = fifth;
 
-        root.right.left = new Node(10);
-        root.right.right = new Node(11);
+         // all print Linked List
+         Node temp = first;
 
-        printLeft(root);
+         while(temp != null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+         }
+         System.out.println("null");
     }
 }
