@@ -24,6 +24,12 @@ public class Res{
         root.left = new Node(6);
         root.right = new Node(7);
 
+        root.left.left = new Node(8);
+        root.left.right = new Node(9);
+
+        root.right.left = new Node(10);
+        root.right.right = new Node(11);
+
         printLeft(root);
     }
 }
