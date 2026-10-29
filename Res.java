@@ -1,11 +1,18 @@
-public class Res {
-    public static void main(String args[]) {
-        int arr[] = { 2, 4, 6, 7, 8 };
+class Node{
+    int data;
+    Node left, right;
+    Node(int data){
+        this.data = data;
+        Node left ,right = null;
+    }
+}
+public class Res{
+    public static void main(String args[]){
         
-      //update value in arrays element
-      arr[2] = 0;
-        for ( int i = 0; i< arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
+        Node root = new Node(5);
+        root.left = new Node(6);
+        root.right = new Node(7);
+
+        System.out.print(root.data);
     }
 }
