@@ -6,8 +6,8 @@ class Node {
         this.next = null;
     }
 }
-
 public class Res{
+
     public static void main(String args[]){
        
         Node first = new Node(49);
@@ -26,6 +26,6 @@ public class Res{
             System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
-        System.out.println("kuchh nahin hain");
+        System.out.println(" null ");
     }
 }
