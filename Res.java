@@ -1,29 +1,28 @@
 class Node{
     int data;
-    Node next;
+    Node left, right;
     Node(int data){
         this.data = data;
-        this.next = null;
+        Node left, right = null;
     }
 }
 public class Res{
     public static void main(String args[]){
-         
-        Node first = new Node(10);
-        Node second = new Node(20);
-        Node third = new Node(30);
+        Node root = new Node(90);
+        root.left = new Node(91);
+        root.right = new Node(92);
 
-        first.next = second;
-        second.next = third;
+        printLeft(root);
 
-        // This all element print
-        Node temp = first;
-
-        while( temp != null){
-            System.out.println(temp.data + " ");
-            temp = temp.next;
+    }
+    static void printLeft(Node root){
+        if( root == null){
+            return;
         }
+        if(root.left == null && root.right == null);
+        System.out.print(root.data + " ");
 
-        System.out.print("null");
+        printLeft(root.left);
+        printLeft(root.right);
     }
 }
