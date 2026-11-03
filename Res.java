@@ -1,29 +1,9 @@
-class Node{
-  int data;
-  Node left, right;
-  Node( int value){
-    
-    data = value;
-  }
-}
-
 public class Res{
-  static void printLeft(Node root){
-    if(root == null){
-      return;
-    }
-    if(root.left == null && root.right == null){
-      System.out.print(root.data + " ");
-     
-    }
-     printLeft(root.left);
-      printLeft(root.right);
-  }
   public static void main(String args[]){
-     Node root = new Node(5);
-     root.left = new Node(6);
-     root.right = new Node(7);
+    int  a = 2;
 
-     printLeft(root);
+    for( int i = 0; i< 11; i++){
+      System.out.print(a);
+    }
   }
 }
