@@ -3,7 +3,7 @@ public class Res{
     int  a = 2;
 
     for( int i = 0; i< 11; i++){
-      System.out.print(a);
+      System.out.print(a + " ");
     }
   }
 }
