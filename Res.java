@@ -1,9 +1,8 @@
 public class Res{
   public static void main(String args[]){
-    int  a = 2;
+    int  a = 2, b = 4;
 
-    for( int i = 0; i< 11; i++){
-      System.out.print(a + " ");
-    }
+    int sum = a + b;
+    System.out.print("total sum :-" + sum);
   }
 }
