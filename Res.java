@@ -2,9 +2,6 @@ public class Res{
     public static void main(String args[]){
         String name = "Anjeet Bharti ";
 
-    //     // System.out.print("Total length of string name :-" + name.length());
-    //     System.out.print("Total string name convert to captal letter:-" + name.toUpperCase());
-        System.out.print("Find the string in substring :-" + name.substring(2, 6));
-
+        System.out.print("Print the substring 7 :-" + name.substring(7));
     }
 }
