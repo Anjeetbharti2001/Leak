@@ -1,7 +1,7 @@
 public class Res{
     public static void main(String args[]){
         String s = "Hello, World!";
-        System.out.print(s.substring(6));
-        
+        System.out.print(s.concat("!!!"));
+
     }
 }
