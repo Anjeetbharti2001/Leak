@@ -2,6 +2,6 @@
 public class Res{
     public static void main(String args[]){
         String s = "Hello, World";
-        System.out.println(s.compareTo("hello, java!"));
+        System.out.println(s.compareToIgnoreCase("hello, java!"));
     }
 }
