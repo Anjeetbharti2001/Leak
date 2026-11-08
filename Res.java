@@ -1,7 +1,9 @@
 public class Res{
     public static void main(String args[]){
-        String str = "Anjeet Bharti";
+        int a = 20;
+        int b = 27;
 
-        System.out.println(str);
+        int sum = a + b;
+        System.out.println(sum);
     }
 }
