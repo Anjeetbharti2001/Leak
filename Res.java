@@ -1,9 +1,12 @@
 public class Res{
     public static void main(String args[]){
-        int a = 20;
-        int b = 27;
+       int a = 3;
+       int b = 4;
 
-        int sum = a + b;
-        System.out.println(sum);
+       int multi = a * b;
+
+       System.out.print("multiplication :-" + multi);
+
+       
     }
 }
