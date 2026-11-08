@@ -1,12 +1,7 @@
 public class Res{
     public static void main(String args[]){
-       int a = 3;
-       int b = 4;
+        int arr[] = { 4,8, 9, 3, 4};
 
-       int multi = a * b;
-
-       System.out.print("multiplication :-" + multi);
-
-       
+        System.out.print(arr.length);
     }
 }
