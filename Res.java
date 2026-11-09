@@ -8,20 +8,32 @@ class Node{
     }
 }
 public class Res{
-    public static void main(String args[]){
-        Node first = new Node(2);
-        Node second = new Node(3);
-        Node third = new Node(4);
+    static Node head;
 
-        first.next = second;
-        second.next =third;
+    //Insert a Beginning
+    static void insertAtBeginning(int data){
+        Node newNode = new Node(data);
 
-        //display the linkedList
-        Node temp = first;
+        newNode.next = head;
+        head = newNode;
 
-        while(temp != null){
-           System.out.print(temp.data + " ");
-           temp = temp.next;
         }
+        //print linkedList
+        static void printList(){
+            Node temp = head;
+
+            while(temp != null){
+                System.out.print(temp.data + "->");
+                temp = temp.next;
+            }
+            System.out.println("null");
+        }
+    public static void main(String args[]){
+        insertAtBeginning(30);
+        insertAtBeginning(20);
+        insertAtBeginning(10);
+
+        printList();
+       printList();
     }
 }
