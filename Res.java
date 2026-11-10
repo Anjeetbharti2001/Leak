@@ -1,7 +1,9 @@
 public class Res{
     public static void main(String args[]){
-        String str = "My name is anjeet bharti, I am from Bihar ";
+        int a = 8;
+        int b = 8;
 
-        System.out.println(str.toUpperCase());
+        System.out.println(a + b);
+        
     }
 }
