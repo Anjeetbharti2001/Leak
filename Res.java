@@ -3,7 +3,7 @@ public class Res{
         int a = 8;
         int b = 8;
 
-        System.out.println(a - b);
+        System.out.println(a * b);
 
     }
 }
