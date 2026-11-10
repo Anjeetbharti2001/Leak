@@ -3,6 +3,6 @@ public class Res{
         int a = 10;
         int b = 10;
 
-        System.out.println("Post Decrement :- " + (b--));
+       System.out.println("Pre decrement:-" + (--b));
     }
 }
