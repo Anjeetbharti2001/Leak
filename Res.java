@@ -3,8 +3,8 @@ public class Res{
         int num = 11;
         System.out.println("Initial value : " + num);
 
-        // add 5 -> num = num + 5
-        num += 5;
+        // subtract 5 -> num = num + 5
+        num -= 5;
 
         System.out.println("After +5 : " + num);
     }
