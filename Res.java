@@ -7,6 +7,7 @@ public class Res{
         int b = 3;
         // int c = 5;
 
-        System.out.println("a > b : " + (a > b));
+        // System.out.println("a > b : " + (a > b));
+        System.out.println("a < b : " + (a < b));
     }
 }
