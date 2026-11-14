@@ -9,5 +9,10 @@ public class Res{
         map.put(102, "Bharti");
 
         System.out.println(map);
+
+        System.out.println(map.get(101));
+
+
+        
     }
 }
