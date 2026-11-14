@@ -1,18 +1,13 @@
 import java.util.*;
-
 public class Res{
     public static void main(String args[]){
-         
-        HashMap<Integer, String> map = new HashMap<>();
 
-        map.put(101, "Anjeet");
-        map.put(102, "Bharti");
+        HashSet<Integer> set = new HashSet<>();
 
-        System.out.println(map);
+        set.add(400);
+        set.add(200);
+        set.add(500);
 
-        System.out.println(map.get(101));
-
-
-        
+        System.out.print(set);
     }
 }
