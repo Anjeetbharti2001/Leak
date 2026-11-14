@@ -1,13 +1,15 @@
+import java.util.*;
 public class Res{
     public static void main(String args[]){
+        HashMap<Integer, String > map = new HashMap<>();
 
-        //Comparison operators
+        map.put(101, "Anjeet");
+        map.put(102, "Rahul");
+        map.put(103, "Amit");
 
-        int a = 10;
-        int b = 3;
-        // int c = 5;
+        System.out.print(map);
 
-        // System.out.println("a > b : " + (a > b));
-        System.out.println("a != b : " + (a != b));
+        //Access value S
+        System.out.println(map.get(101));
     }
 }
