@@ -1,14 +1,14 @@
-import java.util.HashSet;
-
+import java.util.*;
 public class Res{
     public static void main(String args[]){
+
         HashSet<Integer> set = new HashSet<>();
 
-        set.add(10);
-        set.add(20);
-        set.add(30);
-        set.add(40);
+        set.add(4);
+        set.add(5);
+        set.add(6);
+        set.add(7);
 
-        System.out.print(set);
+        System.out.println(set);
     }
 }
