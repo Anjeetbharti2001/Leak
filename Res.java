@@ -1,18 +1,14 @@
-import java.util.*;
+import java.util.HashSet;
+
 public class Res{
     public static void main(String args[]){
-        HashMap<Integer, String> map = new HashMap<>();
+        HashSet<Integer> set = new HashSet<>();
 
-        map.put(101, "I am read.");
-        map.put(102, "Yes, I can Do this work");
-        map.put(103, "I believe my self");
+        set.add(10);
+        set.add(20);
+        set.add(30);
+        set.add(40);
 
-
-        //Access maps
-        System.out.println(map);
-
-        System.out.println(map.get(101));
-
-
+        System.out.print(set);
     }
 }
