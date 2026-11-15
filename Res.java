@@ -1,38 +1,24 @@
 
-import java.util.HashMap;
+import java.util.*;
 
 public class Res {
     public static void main(String args[]) {
 
-        String str1 = "listen";
-        String str2 = "silent";
+        String str = "banana";
 
         HashMap<Character, Integer> map = new HashMap<>();
 
-        if (str1.length() != str2.length()) {
-            System.out.println(false);
-            return;
-        }
+        for (int i = 0; i < str.length(); i++) {
 
-        // Count characters in str1
-        for (int i = 0; i < str1.length(); i++) {
-            char ch = str1.charAt(i);
+            char ch = str.charAt(i);
 
-            map.put(ch, map.getOrDefault(ch, 0) + 1);
-        }
-
-        // Check characters in str2
-        for (int i = 0; i < str2.length(); i++) {
-            char ch = str2.charAt(i);
-
-            if (!map.containsKey(ch) || map.get(ch) == 0) {
-                System.out.println(false);
-                return;
+            if (map.containsKey(ch)) {
+                map.put(ch, map.get(ch) + 1);
+            } else {
+                map.put(ch, 1);
             }
-
-            map.put(ch, map.get(ch) - 1);
         }
 
-        System.out.println(true);
+        System.out.println(map);
     }
 }
