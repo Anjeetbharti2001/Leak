@@ -1,18 +1,8 @@
-
-public class Res {
-    public static void main(String args[]) {
-
-        String str = "madam";
-        String rev = "";
-
-        for (int i = str.length() - 1; i >= 0; i--) {
-            rev = rev + str.charAt(i);
-        }
-
-        if (str.equals(rev)) {
-            System.out.println("Palindrome");
-        } else {
-            System.out.println("Not palindrome");
-        }
+public class Res{
+    public static void main(String args[]){
+        byte age = 25;
+        byte temperature = -10;
+        System.out.println("Age: " + age);
+        System.out.println("Temperature:" + temperature);
     }
 }
