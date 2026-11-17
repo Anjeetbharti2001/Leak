@@ -1,10 +1,8 @@
 public class Res{
     public static void main(String args[]){
-       long worldPopulation = 7800000000L;
-       long lightYears = 9460730472580800L;
-
-       System.out.println("World Population : " + worldPopulation);
-       System.out.println("LightYears: " + lightYears);
-
+       float pi = 3.14f;
+       float gravity = 9.81f;
+       System.out.println("Pi: " + pi);
+       System.out.println("Gravity: " + gravity);
     }
 }
