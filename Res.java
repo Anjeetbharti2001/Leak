@@ -1,10 +1,10 @@
 public class Res{
     public static void main(String args[]){
-       short students = 1000;
-       short temp = -200;
+       int population = 2000000;
+       int distance = 150000000;
 
-       System.out.println("Number's of Student : " + students);
-       System.out.println("Temperature: " + temp);
-       
+       System.out.println("Population : " + population);
+       System.out.println("Distance: " + distance);
+
     }
 }
