@@ -1,10 +1,8 @@
 public class Res{
     public static void main(String args[]){
-       char grade = 'A';
-       char symbole = '$';
+       String str = "My name is Anjeet bharti";
 
-       System.out.println("Grade: " + grade);
-       System.out.println("Symbol: " + symbole);
+       System.out.println(str);
 
     }
 }
