@@ -1,10 +1,10 @@
 public class Res{
     public static void main(String args[]){
-       int population = 2000000;
-       int distance = 150000000;
+       long worldPopulation = 7800000000L;
+       long lightYears = 9460730472580800L;
 
-       System.out.println("Population : " + population);
-       System.out.println("Distance: " + distance);
+       System.out.println("World Population : " + worldPopulation);
+       System.out.println("LightYears: " + lightYears);
 
     }
 }
