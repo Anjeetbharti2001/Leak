@@ -13,7 +13,8 @@ class Car {
 
 public class Res {
     public static void main(String[] args){
-         Car myCar = new Car("Toyota", 2020);
-         myCar.display();
+       Car myCar = new Car("Honda", 2021);
+       System.out.println("Model:" + myCar.model);
+       System.out.println("Year: " + myCar.year);
     }
 }
