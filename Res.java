@@ -1,9 +1,19 @@
-public class Res{
-    public static void main(String args[]){
-       String name = "Geek1";
-       String message = "Welcom to java Anjeet";
+class Car {
+    String model;
+    int year;
 
-       System.out.println("Name : " + name);
-       System.out.println("Message: " + message);
+    Car(String model, int year){
+        this.model = model;
+        this.year = year;
+    }
+    void display(){
+        System.out.println(model + " ");
+    }
+}
+
+public class Res {
+    public static void main(String[] args){
+         Car myCar = new Car("Toyota", 2020);
+         myCar.display();
     }
 }
