@@ -1,11 +1,10 @@
 public class Res{
+    int p = 20;
     public static void main(String args[]){
-        final int[] arr= { 10, 20, 30};
+        final Res t = new Res();
 
-        arr[2] = 99;
+        t.p = 30;
 
-        for(int i = 0; i<arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
+        System.out.println(t.p);
     }
 }
