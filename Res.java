@@ -1,12 +1,17 @@
-import java.util.*;
+class Person {
+    // private variable 
+    private String name;
+
+    public void setName(String name){
+        this.name = name; //accessible within class 
+    }
+    public String getName(){ return name; }
+}
 public class Res{
     public static void main(String args[]){
-        final int[]  numbers = { 1, 2, 3, 4, 5};
+         Person p = new Person();
+         p.setName("Alice");
 
-        // Assigning new element into the arrays 
-        numbers[0] = 10;
-        System.out.println(
-            "Array after modifying first element : "
-         + Arrays.toString(numbers));
+         System.out.println(p.getName());
     }
 }
