@@ -1,20 +1,11 @@
-class Car {
-    String model;
-    int year;
+public class Res{
+    public static void main(String args[]){
+        final int[] arr= { 10, 20, 30};
 
-    Car(String model, int year){
-        this.model = model;
-        this.year = year;
-    }
-    void display(){
-        System.out.println(model + " ");
-    }
-}
+        arr[2] = 99;
 
-public class Res {
-    public static void main(String[] args){
-       Car myCar = new Car("Honda", 2021);
-       System.out.println("Model:" + myCar.model);
-       System.out.println("Year: " + myCar.year);
+        for(int i = 0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 }
