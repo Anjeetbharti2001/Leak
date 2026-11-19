@@ -1,10 +1,12 @@
+import java.util.*;
 public class Res{
-    int p = 20;
     public static void main(String args[]){
-        final Res t = new Res();
+        final int[]  numbers = { 1, 2, 3, 4, 5};
 
-        t.p = 30;
-
-        System.out.println(t.p);
+        // Assigning new element into the arrays 
+        numbers[0] = 10;
+        System.out.println(
+            "Array after modifying first element : "
+         + Arrays.toString(numbers));
     }
 }
