@@ -1,8 +1,9 @@
 public class Res{
-    Res(){
-        System.out.println("Called");
-    }
-    public static void main(String[] args){
-        Res s = new Res();
+    public static void main(String args[]){
+        try{
+            int a = 10/0;
+        }catch (ArithmeticException e){
+            System.out.println("cannot divide by zero");
+        }
     }
 }
