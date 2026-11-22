@@ -1,23 +1,10 @@
-class Programmer {
+public class Res{
+    public static void main(String args[]){
+        int arr[] = { 3, 5, 7, 9, 8};
 
-    private String name;
-
-    // Getter method used to get the data
-    public String getName() { return name; }
-
-    // Setter method is used to set or modify the data
-    public void setName(String name) {
-        
-        this.name = name;
-    }
-}
-
-public class Res {
-
-    public static void main(String[] args){
-        
-        Programmer p = new Programmer();
-        p.setName("Geek");
-        System.out.println("Name=> " + p.getName());
+        for(int i = 0; i<arr.length; i++){
+            
+        System.out.println(arr[i]);
+        }
     }
 }
