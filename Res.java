@@ -1,15 +1,23 @@
-public class Res{
-    public static void main(String args[]){
-        String str = "Madam";
-        String rev = "";
+class Programmer {
 
-        for(int i = str.length()-1; i>= 0; i--){
-            rev = rev + str.charAt(i);
-        }
-        if(str.equals(rev)){
-            System.out.println("Palindrome");
-        }else{
-            System.out.println("Not Palindrome");
-        }
+    private String name;
+
+    // Getter method used to get the data
+    public String getName() { return name; }
+
+    // Setter method is used to set or modify the data
+    public void setName(String name) {
+        
+        this.name = name;
+    }
+}
+
+public class Res {
+
+    public static void main(String[] args){
+        
+        Programmer p = new Programmer();
+        p.setName("Geek");
+        System.out.println("Name=> " + p.getName());
     }
 }
