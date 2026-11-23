@@ -1,6 +1,7 @@
 public class Res{
     public static void main(String args[]){
-        String text = "Anjeet";
-        text.chartAt(0) = 'A'; 
+        String str  = "Anjeet";
+      System.out.println("Length of String -> " + str.length());
+      System.out.println("Change String -> " + str.toUpperCase()); 
     }
 }
