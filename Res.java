@@ -1,10 +1,6 @@
 public class Res{
     public static void main(String args[]){
-        int i = 1;
-
-        while(i <= 10){
-            System.out.println(i + " ");
-            i++;
-        }
+        int arr[] = { 3, 6, 7};
+        System.out.println(arr.length);
     }
 }
