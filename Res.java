@@ -1,12 +1,10 @@
 public class Res{
     public static void main(String args[]){
-        int i = 1, s = 0;
-        while(i <= 6){
+        int i = 0;
 
-            s = s+1;
-           
+        while( i < 5){
+            System.out.println(i);
             i++;
         }
-         System.out.println("summation: " + s );
     }
 }
