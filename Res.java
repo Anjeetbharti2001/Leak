@@ -1,10 +1,10 @@
 public class Res{
     public static void main(String args[]){
-        String arr[] = { "anjeet", "bharti", "divy ", "rout","over"};
+        String arr[] = { "Bharti", "Bharat","India", "Hindustan", "Indus"};
 
-        int i = 0;
+        int i = 0; 
 
-        while(i < arr.length){
+        while ( i < arr.length){
             System.out.print(arr[i] + " ");
             i++;
         }
