@@ -1,15 +1,7 @@
 public class Res{
     public static void main(String args[]){
-        String arr[] = { "Bharti", "Bharat","India", "Hindustan", "Indus"};
+        int arr[] = { 4, 6,7,7,8,3};
 
-        // update value
-         arr[4] = " ARYAWART ";
-
-        int i = 0; 
-
-        while ( i < arr.length){
-            System.out.print(arr[i] + " ");
-            i++;
-        }
+        System.out.print(arr[0] );
     }
 }
