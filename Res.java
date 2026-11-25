@@ -2,6 +2,9 @@ public class Res{
     public static void main(String args[]){
         String arr[] = { "Bharti", "Bharat","India", "Hindustan", "Indus"};
 
+        // update value
+         arr[4] = " ARYAWART ";
+
         int i = 0; 
 
         while ( i < arr.length){
