@@ -1,12 +1,12 @@
 public class Res{
     public static void main(String args[]){
-        String [] fruits = { "APPLE", "BANANA", "CHERRY", "DATE"};
+        String arr[] = { "anjeet", "bharti", "divy ", "rout","over"};
 
-        int index = 0;
+        int i = 0;
 
-        while(index < fruits.length){
-            System.out.println("Fruit at index " + index + " : " + fruits[index]);
-            index++;
+        while(i < arr.length){
+            System.out.print(arr[i] + " ");
+            i++;
         }
     }
 }
