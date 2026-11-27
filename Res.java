@@ -1,7 +1,9 @@
 public class Res{
     public static void main(String args[]){
-        int arr[] = { 4, 6,7,7,8,3};
+        int a = 10, b = 10;
 
-        System.out.print(arr[0] );
+        // increament and decreament 
+        System.out.print("post - increament : " + (a++));
+
     }
 }
