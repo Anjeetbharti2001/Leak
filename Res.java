@@ -5,6 +5,6 @@ public class Res{
         // increament and decreament 
         // System.out.print("pre - increament : " + (++a));
 
-        System.out.print("Post-Decreament : " + b++);
+        System.out.print("Pre-Decreament : " + (--b));
     }
 }
