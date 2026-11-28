@@ -3,7 +3,7 @@ public class Res{
         int a = 10;
 
         // Command assignment 
-        a *= 5;
+        a /= 5;
         System.out.println(a);
     }
 }
